@@ -1,0 +1,32 @@
+{
+  "client_name": "Rodriguez-Stevens",
+  "client_address": "2280 Angela Plain, Hortonshire, MS 93248",
+  "invoice_date": "2012-09-06",
+  "items": [
+    {
+      "description": "Wine Glasses Goblets Pair Clear Glass",
+      "quantity": "5",
+      "price_per_unit": "12",
+      "total_amount": "66"
+    },
+    {
+      "description": "With Hooks Stemware Storage Multiple Uses Iron Wine Rack Hanging Glass",
+      "quantity": "4",
+      "price_per_unit": "28.08",
+      "total_amount": "123.55"
+    },
+    {
+      "description": "Replacement Corkscrew Parts Spiral Worm Wine Opener Bottle Houdini",
+      "quantity": "1",
+      "price_per_unit": "7.5",
+      "total_amount": "8.25"
+    },
+    {
+      "description": "HOME ESSENTIALS GRADIENT STEMLESS WINE GLASSES SET OF 4 20 FL OZ (591 ml) NEW",
+      "quantity": "1",
+      "price_per_unit": "12.99",
+      "total_amount": "14.29"
+    }
+  ],
+  "total_value": "212.09"
+}

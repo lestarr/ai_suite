@@ -1,0 +1,50 @@
+{
+  "client_name": "Hernandez-Anderson",
+  "client_address": "084 Carter Lane Apt. 846, South Ronaldbury, AZ 91030",
+  "invoice_date": "2012-10-09",
+  "items": [
+    {
+      "description": "Lilly Pulitzer dress Size 2",
+      "quantity": "5",
+      "price_per_unit": "45",
+      "total_amount": "247.5"
+    },
+    {
+      "description": "New ERIN Erin Fertherson Straight Dress White Sequence Lining Sleeveless SZ 10",
+      "quantity": "1",
+      "price_per_unit": "59.99",
+      "total_amount": "65.99"
+    },
+    {
+      "description": "Sequence dress Size Small",
+      "quantity": "3",
+      "price_per_unit": "35",
+      "total_amount": "115.5"
+    },
+    {
+      "description": "fire los angeles dress Medium",
+      "quantity": "3",
+      "price_per_unit": "6.5",
+      "total_amount": "21.45"
+    },
+    {
+      "description": "Eileen Fisher Women's Long Sleeve Fleece Lined Front Pockets Dress XS Gray",
+      "quantity": "3",
+      "price_per_unit": "15.99",
+      "total_amount": "52.77"
+    },
+    {
+      "description": "Lulacore Nicole Dress Size Small Light Solid Grey/ White Ringer Tee Trim",
+      "quantity": "2",
+      "price_per_unit": "3.75",
+      "total_amount": "8.25"
+    },
+    {
+      "description": "J.Crew Collection Black & White sweater Dress sz S",
+      "quantity": "1",
+      "price_per_unit": "30",
+      "total_amount": "33"
+    }
+  ],
+  "total_value": "544.46"
+}

@@ -1,0 +1,23 @@
+{
+  "url": "https://www.herox.com/StartupOpenCall",
+  "model": "ChallengeDetails",
+  "timestamp": "2025-01-26T22:48:17.526409",
+  "extractions": [
+    {
+      "title": "HeroX's Open Call for Startups",
+      "url": "https://www.herox.com/StartupOpenCall",
+      "organizer": "HeroX",
+      "prize_pool": null,
+      "submission_deadline": "",
+      "key_objective": "Empower startups and drive innovation across industries by inviting visionary startups to join a dynamic community, gain international exposure, and collaborate with organizations seeking cutting-edge solutions and/or ideas.",
+      "judging_criteria": null,
+      "classification_keywords": [
+        "startups",
+        "innovation",
+        "collaboration",
+        "global exposure",
+        "partnerships"
+      ]
+    }
+  ]
+}

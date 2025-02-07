@@ -1,0 +1,7 @@
+field,total,correct,missing,accuracy
+transaction_id,20,20,0,100.0
+amount,20,18,0,90.0
+currency,20,20,0,100.0
+transaction_type,20,17,2,85.0
+sender_details,20,16,4,80.0
+recipient_details,20,15,5,75.0 

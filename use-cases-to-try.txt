@@ -1,0 +1,26 @@
+now when this is functioning well, please create readme in @evaluation 
+discribing all the ideas and settings we realized here and 
+step by step how the whole evaluation is done
+
+2. prepare a draft for demonstrationg our main idea to deal with the problem of the LLM "laziness", that means: while extracting bigger tasks, the results differ when processeing same data: Llm often misses points and results are not complete. 
+the better known problem: hallucinations is very well controlled with citations, explanations, good data modelling and validations. 
+but "laziness" was not
+what we did: 
+look at the prompt for ground truth evaluator in @entity_evaluators.py 
+we state explicit which filelds are expected and the we define validation function which checks their presence. we will ignore uncomplete evaluations or run them again
+we could also implement counter and after some retries take the results as they are - they will always be better
+
+
+
+with the new method we came on 6 extraction from 133 to 159 entities
+
+
+**********
+herox
+**********
+
+*********
+zillow
+*********
+
+I am looking to rent a house in Raleigh or suborbs. 4+ bedrooms. make me a table of listings from zillow for this search and include columns: price, since when available, bedrooms, living area, school ratings of the belonging scool district and school etnicity distribution

@@ -1,0 +1,71 @@
+EVALUATION_PROMPT = """
+# Entity Validation Protocol
+
+## Entity Class Definitions
+1. **ContentEntity**  
+- Structure: {content: [...], citations: [...], validation_flags: [...]}  
+- Treat as correct ONLY if:  
+  a) All content elements are fully supported by citations  
+  b) No contradictory evidence exists  
+  c) Validation flags align with content reality
+
+2. **FlagEntity**  
+- Structure: {flag: bool, citation: str, validated: bool}  
+- Validate as correct WHEN:  
+  a) Flag state matches ground truth reality  
+  b) Citation directly supports the flag  
+  c) Validation status reflects verification completeness
+
+3. **ClassifiedEnumEntity**  
+- Structure: {  
+  classification_type: enum,  
+  classified_values: [...],  
+  evidence: [...]  
+}  
+- Consider valid IF:  
+  a) Classification type matches evidence context  
+  b) All values belong to proper enum domain  
+  c) Evidence sufficiently covers all values
+
+4. **RelatedEntityGroup**  
+- Structure: {parent_entity: ..., children: [...]}  
+- Validate as SINGLE UNIT:  
+  a) Parent-child relationships must be logically consistent  
+  b) Cross-field validation flags must agree  
+  c) Citation evidence must support holistic context
+
+5. **ListEntity**  
+- Structure: [entity1, entity2, ...]  
+- Evaluation Rules:  
+  a) Treat each list item as separate entity unit  
+  b) Full list correctness requires ALL items valid  
+  c) Partial correctness when ≥1 item valid
+
+## Evaluation Instructions
+For each entity unit:
+
+1. **Existence Check**  
+- Return False if: null, empty array, zero-value, or placeholder exists
+
+2. **Correctness Determination**  
+- True ONLY when:  
+  a) Semantic match with ground truth  
+  b) Complete evidentiary support  
+  c) Internal consistency across all features
+
+3. **Partial Correctness**  
+- Mark True if:  
+  a) Subset of features are valid  
+  b) Evidence partially supports  
+  c) Contains correct core with peripheral errors
+
+## Output Format
+For EACH entity unit:
+```json
+{
+  "exists": "True/False",
+  "correct": "True/False",
+  "correctness_explanation": "Concise rationale",
+  "partial": "True/False", 
+  "partial_explanation": "Specific valid/invalid subcomponents"
+}

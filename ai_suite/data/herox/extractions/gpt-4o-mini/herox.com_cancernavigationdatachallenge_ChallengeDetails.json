@@ -1,0 +1,32 @@
+{
+  "url": "https://www.herox.com/CancerNavigationDataChallenge",
+  "model": "ChallengeDetails",
+  "timestamp": "2025-01-26T22:12:12.214090",
+  "extractions": [
+    {
+      "title": "Transforming Cancer Navigation with Open Data & APIs",
+      "url": "https://www.herox.com/CancerNavigationDataChallenge",
+      "organizer": "AcademyHealth",
+      "prize_pool": {
+        "prize_pool": 50000.0,
+        "prize_pool_currency": "USD",
+        "minimum_individual_prize": 10000.0,
+        "maximum_individual_prize": 22500.0
+      },
+      "submission_deadline": "2025-04-03",
+      "key_objective": "Support care Navigators with digital tools that integrate openly available datasets and APIs. Enhance patient care and support systems.",
+      "judging_criteria": [
+        "Impact on Patient Navigation",
+        "Integration of Open Data and APIs",
+        "Public Health Benefits",
+        "Usability and Accessibility",
+        "Innovation"
+      ],
+      "classification_keywords": [
+        "Data Science",
+        "Healthcare",
+        "Technology"
+      ]
+    }
+  ]
+}

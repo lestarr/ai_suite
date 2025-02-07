@@ -1,0 +1,6 @@
+document,total,correct,missing,accuracy
+bank_statement_jan_2024.pdf,6,5,1,83.3
+transaction_log_q1.pdf,6,6,0,100.0
+wire_transfers_feb.pdf,6,4,2,66.7
+payment_records_march.pdf,6,5,1,83.3
+international_transfers.pdf,6,4,2,66.7 

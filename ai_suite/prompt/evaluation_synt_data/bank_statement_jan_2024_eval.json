@@ -1,0 +1,59 @@
+{
+  "metadata": {
+    "test_file": "data/test/financial/bank_statement_jan_2024.pdf",
+    "ground_truth_file": "data/test/ground_truth/financial/bank_statement_jan_2024_manual.json",
+    "features": {
+      "model": "gpt-4o",
+      "extraction_type": "auto"
+    },
+    "token_usage": {
+      "prompt_tokens": 3245,
+      "completion_tokens": 892,
+      "total_tokens": 4137
+    }
+  },
+  "results": {
+    "ground_truth_evaluations": [
+      {
+        "field_name_ground_truth": "transaction_id",
+        "field_name_test": "transaction_id",
+        "ground_truth_entity_core_value": "TRX-2024-001",
+        "test_entity_core_value": "TRX-2024-001",
+        "evaluations": [
+          {
+            "entity_info_missing": false,
+            "entity_info_correct": true,
+            "examples_for_wrong_or_correct": "Correct: Transaction ID matches exactly"
+          }
+        ]
+      },
+      {
+        "field_name_ground_truth": "amount",
+        "field_name_test": "amount",
+        "ground_truth_entity_core_value": "5000.00",
+        "test_entity_core_value": "5000.00",
+        "evaluations": [
+          {
+            "entity_info_missing": false,
+            "entity_info_correct": true,
+            "examples_for_wrong_or_correct": "Correct: Amount matches exactly"
+          }
+        ]
+      },
+      {
+        "field_name_ground_truth": "sender_details",
+        "field_name_test": "sender_details",
+        "ground_truth_entity_core_value": "John Smith, Account: 1234-5678",
+        "test_entity_core_value": "John Smith, Acc: 1234-5678",
+        "evaluations": [
+          {
+            "entity_info_missing": false,
+            "entity_info_correct": true,
+            "examples_for_wrong_or_correct": "Correct: Account format slightly different from ground truth, but the information is correct"
+          }
+        ]
+      }
+    ],
+    "validation_tried": true
+  }
+}

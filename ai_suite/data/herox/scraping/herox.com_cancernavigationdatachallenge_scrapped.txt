@@ -1,0 +1,325 @@
+Transforming Cancer Navigation with Open Data & APIs | HeroX
+===============
+
+[![Image 1: Home](https://d253pvgap36xx8.cloudfront.net/static/images/herox-logo.svg)](https://www.herox.com/)
+
+[challenges](https://www.herox.com/crowdsourcing-projects) [For Business](https://www.herox.com/how-it-works) [Who We Are](https://www.herox.com/about) [Results](https://www.herox.com/results)
+
+search
+
+Get Started
+
+   [I want to launch a challenge](https://www.herox.com/i-want-to-launch-challenge) Connect to talented problem solvers
+   [I want to solve a challenge](https://www.herox.com/sign-up?next=/crowdsourcing-projects) Join our community to win prizes
+
+[log in](https://www.herox.com/sign-in?next=/CancerNavigationDataChallenge)
+
+menu
+
+[log in](https://www.herox.com/sign-in?next=/CancerNavigationDataChallenge)
+
+[challenges](https://www.herox.com/crowdsourcing-projects) [For Business](https://www.herox.com/how-it-works) [Who We Are](https://www.herox.com/about) [Results](https://www.herox.com/results)
+
+[![Image 2: Challenge creator logo](https://d253pvgap36xx8.cloudfront.net/groups/logothumbnail/e4d67182b2e311efac97b29dad60684d/4dd70c10b2e311ef983afe2cbbb90778.png)](https://www.herox.com/AcademyHealth)
+
+[AcademyHealth](https://www.herox.com/AcademyHealth)
+----------------------------------------------------
+
+ 5,710 share follow (103) following unfollow (103)
+
+![Image 3](https://d253pvgap36xx8.cloudfront.net/static/images/powered-by-text.svg)
+
+![Image 4](https://d253pvgap36xx8.cloudfront.net/static/images/logo-white.svg)
+
+  ![Image 5](https://d253pvgap36xx8.cloudfront.net/challenges/imagedetail/657d8582ab0511efa353dec61398a354/6471a178ab0511ef89ef52f87da42874.jpeg)
+
+Transforming Cancer Navigation with Open Data & APIs
+====================================================
+
+Support care Navigators with digital tools that integrate openly available datasets and APIs. Enhance patient care and support systems.
+
+solve this challenge
+
+[Data Science](https://www.herox.com/crowdsourcing-projects/data-science) [Healthcare](https://www.herox.com/crowdsourcing-projects/healthcare) [Technology](https://www.herox.com/crowdsourcing-projects/technology) [Powered By HeroX](https://www.herox.com/crowdsourcing-projects/poweredbyherox)
+
+stage:
+
+Enter
+
+prize:
+
+$50,000
+
+solve this challenge
+
+[Data Science](https://www.herox.com/crowdsourcing-projects/data-science) [Healthcare](https://www.herox.com/crowdsourcing-projects/healthcare) [Technology](https://www.herox.com/crowdsourcing-projects/technology) [Powered By HeroX](https://www.herox.com/crowdsourcing-projects/poweredbyherox)
+
+[more](https://www.herox.com/CancerNavigationDataChallenge#)
+
+Summary
+
+Timeline
+
+Updates2
+
+Forum3
+
+Teams103
+
+Resources
+
+FAQ
+
+Summary
+
+[Overview](https://www.herox.com/CancerNavigationDataChallenge#block-7960) [In coordination with...](https://www.herox.com/CancerNavigationDataChallenge#block-7965) [Guidelines](https://www.herox.com/CancerNavigationDataChallenge#block-7961)
+
+Overview
+
+The Transforming Cancer Navigation with Open Data & APIs Challenge is designed to inspire data enthusiasts  and innovators to develop cutting-edge solutions that improve the cancer patient navigation experience. Cancer patient navigation is the process of guiding patients through the healthcare system, ensuring they receive the support and services they need throughout their cancer treatment, and it remains a critical challenge, particularly in underserved communities. Existing cancer navigation apps often fail to incorporate open data or leverage APIs, resulting in significant disparities in accessibility and inclusivity, and missing a major opportunity to become more integrated and expand cancer insight through data integration. This challenge calls on solvers to leverage open datasets and APIs into innovative solutions that improve cancer patient navigation, specifically in screening for patients’ social needs, monitoring for quality, scheduling appointments, and ensuring connections to all available services. Participants are encouraged to incorporate AI-ready datasets and sync with social need APIs to address social determinants of health.
+
+The challenge sponsors, Robert Wood Johnson Foundation with AcademyHealth, invite you to play a pivotal role in transforming cancer patient navigation by contributing datasets to this groundbreaking initiative. By making your data available to solvers, you’ll help drive the creation of innovative solutions that improve patient care, reduce disparities, and empower millions navigating the complexities of cancer treatment. We’re looking for datasets that enable solvers to address social determinants of health, enhance care coordination, and integrate advanced analytics into their solutions. Examples include clinical outcomes, patient demographics, genomic insights, public health resources, or social service connections. Join us in shaping the future of cancer care; if you have relevant datasets to share, send a message to , and be part of this transformative journey.
+
+In coordination with...
+
+This challenge is being launched and run in coordination with the following organizations:
+
+![Image 6](https://d253pvgap36xx8.cloudfront.net/editoruploads/235698/2024/12/05/ACSRGB.jpeg)
+
+![Image 7](https://d253pvgap36xx8.cloudfront.net/editoruploads/235698/2024/12/03/ASTP320.jpeg)
+
+[![Image 8](https://d253pvgap36xx8.cloudfront.net/editoruploads/235698/2024/12/04/Cancer%20XFull%20ColorCMYKLogo.jpeg)](https://cancerx.health/)
+
+![Image 9](https://d253pvgap36xx8.cloudfront.net/editoruploads/235698/2024/12/09/joblogoconfig-1621504564894%5B1%5D.png)
+
+![Image 10](https://d253pvgap36xx8.cloudfront.net/editoruploads/235698/2024/12/04/IHLOGOTAGLINEHIGHRES.jpeg)
+
+![Image 11](https://d253pvgap36xx8.cloudfront.net/editoruploads/235698/2025/01/13/RWJF%20%2B%20Wordmark.jpeg)
+
+Guidelines
+
+Challenge Breakthrough
+
+Cancer patient navigation is not accessible to all, and the technology surrounding it is often developed without inclusivity and progressive advancements in mind. Recognizing this shortcoming, there is a growing effort to increase both the supply and the assessability of cancer navigation services. As part of the Cancer Moonshot program, several initiatives aimed at increasing access to patent navigation services were recently announced. These efforts include commitments from leading health insurers and oncology providers to make these services accessible to over 150 million Americans. Additionally, in 2024 Medicare began covering navigation services, further enhancing accessibility​. Cancer patient navigation is a process in which Navigators, often humans supported by technology, guide patients through the complex healthcare system by screening for social needs, monitoring care quality, scheduling appointments, and connecting them to essential services.
+
+This challenge calls on solvers to expand and enhance patient navigation, leveraging open datasets and APIs. Your challenge is to create solutions that are inclusive, user-friendly, and capable of providing comprehensive support to cancer patient Navigators, helping them perform their duties more effectively. These solutions could improve patient outcomes by reducing diagnosis-to-treatment times, ensuring treatment adherence, and addressing social determinants of health such as food, housing, and transportation needs.
+
+Background
+
+Cancer patient navigation remains a critical challenge in the US, particularly in rural and underserved urban areas, where significant disparities in healthcare access and outcomes persist. The lack of integrated data makes it difficult for patients to receive coordinated and efficient care. As a result, many patients lack the guidance necessary to manage their treatment effectively.
+
+Patient navigation aims to address these barriers by guiding individuals through the often complex healthcare system, particularly in cancer care. Navigators, usually humans assisted by technology, play a vital role in ensuring that patients receive the support they need. They are charged with four primary responsibilities:
+ Screening for social needs: Identifying factors like transportation, financial strain, and housing that could impede a patient's access to care.
+ Monitoring for quality: Ensuring patients receive appropriate, timely, and high-quality care throughout their cancer journey.
+ Scheduling appointments: Coordinating with healthcare providers to ensure timely consultations, treatments, and follow-ups.
+ Ensuring connections to available services: Linking patients with community resources, financial assistance programs, and support groups.
+
+These roles are crucial for improving patient outcomes and reducing disparities, but they are significantly enhanced when supported by comprehensive data. Data integration enables Navigators to track patients' clinical and social needs in real-time, identify gaps in care, and tailor interventions based on predictive analytics.
+
+As part of the Cancer Moonshot initiative, commitments have been secured in addressing these issues. This initiative has secured commitments from leading health insurers and oncology providers to expand access to navigation services, benefiting over 150 million Americans. Medicare's inclusion of navigation services starting in January 2024 marks a significant step forward in making these services more widely accessible.
+
+The evolution of cancer datasets has revolutionized our ability to understand, diagnose, and treat cancer. Over the past few decades, projects like The Cancer Genome Atlas (TCGA) and the National Cancer Institute’s Surveillance, Epidemiology, and End Results (SEER) Program have provided comprehensive genomic, clinical, and demographic data. These datasets enable researchers and healthcare providers to better understand cancer progression, develop targeted therapies, and tailor patient care based on genetic profiles.
+
+The Challenge
+
+In this challenge, solvers are tasked with creating or enhancing cancer patient navigation apps and services by incorporating open datasets and leveraging APIs to provide a superior navigation experience. The goal is to design solutions that significantly improve the accessibility, usability, and effectiveness of patient navigation services, particularly for underserved populations.
+
+Solutions should demonstrate how they benefit or enhance the navigation experience for Navigators, patients, or caregivers. Emphasize patient-facing features to ensure the app is user-friendly and directly benefits the patients.
+
+Key objectives of this challenge include:
+
+   Help Patients Aggregate Medical Records: Solvers should leverage the emerging TEFCA for individual access service (and related “patient right of access” APIs) to organize a longitudinal health record that is ready for Navigator access, and advanced analytic uses.
+   Utilizing AI-Ready Datasets: Solvers should integrate advanced analytics, machine learning, visualization, and AI-ready datasets to inform and enhance the navigation experience. These datasets can include clinical data, genomic data, treatment outcomes, and patient demographics to provide personalized and predictive navigation assistance.
+   Integrating Open Data: Current navigation apps often do not utilize APIs and open datasets. Solvers must incorporate open data into existing apps or create new solutions that make effective use of these resources. Open data sources can include public health databases, cancer registries, and other relevant datasets (see the [Resources tab](https://www.herox.com/CancerNavigationDataChallenge/)).
+   Syncing with Social Need APIs: Incorporate APIs that address social determinants of health, such as housing, transportation, food security, and other social needs. These APIs could help in screening and connecting patients to the necessary social services that support their treatment journey, for example.
+   Adopting Social Determinants Screening Standards: Include standardized screening for social determinants of health to identify and address barriers to care. This could help in providing a holistic approach to patient navigation, improving overall patient outcomes.
+   Demonstrating and Presenting: Solvers will be required to demonstrate how they have integrated open datasets to enhance the navigation experience, showcasing the functionality, its ability to improve patient outcomes, and how it addresses the challenges faced by patients, navigators, and caregivers.
+
+How do I Win?
+
+To be eligible for an award, your proposal must, at minimum:
+
+   Satisfy the Judging Criteria requirements.
+   Thoughtfully address the Submission Form questions.
+   Be scored higher than your competitors!
+
+Prize
+
+The total prize purse is $50,000.
+
+<table><colgroup><col style="width:22.15%;"><col style="width:66.26%;"><col style="width:11.59%;"></colgroup><tbody><tr><td style="border-color:#000000;border-style:solid;padding:0pt 5pt;vertical-align:top;"><strong>1<sup>st</sup> Prize</strong></td><td style="border-color:#000000;border-style:solid;padding:0pt 5pt;vertical-align:top;">&#160;</td><td style="border-color:#000000;border-style:solid;padding:0pt 5pt;vertical-align:top;">$22,500</td></tr><tr><td style="border-color:#000000;border-style:solid;padding:0pt 5pt;vertical-align:top;"><strong>2<sup>nd</sup> Prize</strong></td><td style="border:0.5pt solid #000000;padding:0pt 5pt;vertical-align:top;">&#160;</td><td style="border-color:#000000;border-style:solid;padding:0pt 5pt;vertical-align:top;">$15,000</td></tr><tr><td style="border-color:#000000;border-style:solid;padding:0pt 5pt;vertical-align:top;"><strong>3<sup>rd</sup> Prize</strong></td><td style="border:0.5pt solid #000000;padding:0pt 5pt;vertical-align:top;">&#160;</td><td style="border-color:#000000;border-style:solid;padding:0pt 5pt;vertical-align:top;">$10,000</td></tr><tr><td style="border-color:#000000;border-style:solid;padding:0pt 5pt;vertical-align:top;"><strong>Categorical Prizes</strong></td><td style="border-color:#000000;border-style:solid;padding:0pt 5pt;vertical-align:top;">Categories will be determined and up to 5 $500 prizes can be awarded. Categories may include, for example “Most Innovative Solution.”</td><td style="border-color:#000000;border-style:solid;padding:0pt 5pt;vertical-align:top;">$2,500</td></tr></tbody></table>
+
+The challenge sponsor reserves the right to (a) cancel, suspend, or modify the Challenge, or any part of it, for any reason, and/or (b) not award any prizes if no submissions are deemed worthy.
+
+Timeline
+
+<table><colgroup><col style="width:58.29%;"><col style="width:41.71%;"></colgroup><tbody><tr><td style="border:1pt solid #000000;padding:5pt;vertical-align:top;">Pre-registration &amp; Data source collection</td><td style="border:1pt solid #000000;padding:5pt;vertical-align:top;">December 4, 2024</td></tr><tr><td style="border:1pt solid #000000;padding:5pt;vertical-align:top;">Open to submissions</td><td style="border:1pt solid #000000;padding:5pt;vertical-align:top;">January 13, 2025, 9:00 AM ET</td></tr><tr><td style="border:1pt solid #000000;padding:5pt;vertical-align:top;">Submission deadline</td><td style="border:1pt solid #000000;padding:5pt;vertical-align:top;">April 3, 2025, 5:00 PM ET</td></tr><tr><td style="border:1pt solid #000000;padding:5pt;vertical-align:top;">Judging</td><td style="border:1pt solid #000000;padding:5pt;vertical-align:top;">April 4 - May 15, 2025</td></tr><tr><td style="border:1pt solid #000000;padding:5pt;vertical-align:top;">Winners Announced</td><td style="border:1pt solid #000000;padding:5pt;vertical-align:top;">May 16, 2025&#160;</td></tr></tbody></table>
+
+\During pre-registration, all timeline dates are tentative and subject to change
+
+Judging Criteria
+
+<table><colgroup><col style="width:13.78%;"><col style="width:75.43%;"><col style="width:10.79%;"></colgroup><tbody><tr><td style="border:1pt solid #000000;padding:5pt;vertical-align:top;"><p style="text-align:center;"><strong>Section&#160;</strong></p></td><td style="border:1pt solid #000000;padding:5pt;vertical-align:top;"><p style="text-align:center;"><strong>Description</strong></p></td><td style="border:1pt solid #000000;padding:5pt;vertical-align:top;"><p style="text-align:center;"><strong>Overall Weight</strong></p></td></tr><tr><td style="border:1pt solid #000000;padding:5pt;vertical-align:top;">Impact on Patient Navigation</td><td style="border:1pt solid #000000;padding:5pt;vertical-align:top;">To what extent does the solution improve the ease of navigating cancer treatment for patients? How significantly does the app reduce the time between diagnosis and treatment initiation? Does the app enhance the coordination and continuity of care for patients? How effectively does the app support patients in adhering to their treatment plans?</td><td style="border:1pt solid #000000;padding:5pt;vertical-align:top;">30%</td></tr><tr><td style="border:1pt solid #000000;padding:5pt;vertical-align:top;">Integration of Open Data and APIs</td><td style="border:1pt solid #000000;padding:5pt;vertical-align:top;">How well does the solution integrate relevant open datasets to enhance functionality? To what extent are APIs utilized to connect with additional services and resources? How seamlessly do the open data and APIs contribute to a better navigation experience? Are the integrated data and APIs used innovatively to solve specific patient navigation problems?</td><td style="border:1pt solid #000000;padding:5pt;vertical-align:top;">25%</td></tr><tr><td style="border:1pt solid #000000;padding:5pt;vertical-align:top;">Public Health Benefits</td><td style="border:1pt solid #000000;padding:5pt;vertical-align:top;">How does the solution address broader public health issues related to cancer care? To what extent does the app help in identifying and mitigating social determinants of health? Does the solution provide equitable access to navigation services across diverse populations? How well does the app support public health goals, such as improving overall cancer survival rates?</td><td style="border:1pt solid #000000;padding:5pt;vertical-align:top;">20%</td></tr><tr><td style="border:1pt solid #000000;padding:5pt;vertical-align:top;">Usability and Accessibility</td><td style="border:1pt solid #000000;padding:5pt;vertical-align:top;">How user-friendly is the app for patients, Navigators, and caregivers? Does the app provide a seamless and intuitive user experience? To what extent does the solution ensure accessibility for users with different abilities and from various backgrounds? How well does the app handle real-world usability challenges in diverse healthcare settings?</td><td style="border:1pt solid #000000;padding:5pt;vertical-align:top;">15%</td></tr><tr><td style="border:1pt solid #000000;padding:5pt;vertical-align:top;">Innovation</td><td style="border:1pt solid #000000;padding:5pt;vertical-align:top;">How original and creative is the solution in addressing patient navigation challenges? Does the app introduce new features or approaches that significantly enhance the user experience? How well does the solution leverage cutting-edge technologies, such as AI and machine learning? To what extent does the app push the boundaries of current patient navigation services?</td><td style="border:1pt solid #000000;padding:5pt;vertical-align:top;">10%</td></tr></tbody></table>
+
+Rules
+
+Participation Eligibility:
+
+The challenge is open to all adult individuals, private teams, public teams, and collegiate teams. Teams may originate from any country. Submissions must be made in English. All challenge-related communication will be in English.
+
+Individual competitors and teams may originate from any country, as long as United States federal sanctions do not prohibit participation (see: [https://www.treasury.gov/resource-center/sanctions/Programs/Pages/Programs.aspx](https://www.treasury.gov/resource-center/sanctions/Programs/Pages/Programs.aspx)).
+
+No specific qualifications or expertise in the field of API/software development and data science is required. Prize organizers encourage outside individuals and non-expert teams to compete and propose new solutions.
+
+To be eligible to compete, you must comply with all the terms of the challenge as defined in the [Challenge-Specific Agreement](https://www.herox.com/CancerNavigationDataChallenge/legal-agreement-view)
+
+Registration and Submissions:
+
+Submissions must be made online (only), via upload to the [HeroX.com](http://herox.com/) website, on or before the submission deadline set in the challenge guidelines. All uploads must be in formats specified in the submission form. No late submissions will be accepted.
+
+This challenge allows multiple submissions per individual/team. Should you have multiple entries to submit to this challenge, they will be considered separately. While multiple entries are allowed, only one entry from the same individual or team may be chosen for a prize. You are not required to submit multiple entries.
+
+Intellectual Property Rights:
+
+As detailed in the Challenge-Specific Agreement, the Innovator will retain all intellectual property rights to their technology. Should the innovator win an award, the Sponsor will require the Innovator to share a license to the intellectual property contained in the Submission. This allows both the Innovator and Sponsor to independently use the intellectual property for their own use.
+
+Consolation Prize:
+
+In the event that none of the submissions meet the Judging Criteria, the sponsor will award up to three (3) consolation prizes of up to $500 each, to the competitor(s) that score the highest.
+
+Awarding of the Prize:
+
+The Individual Submitter or Team Captain is automatically designated as the Recipient of the prize monies. The Individual’s or Captain’s name must also match the Authorized Person on the receiving Bank Account. No changes are permitted to the prize Recipient after the Submission Deadline date. If you wish to change who would receive the prize monies, those changes must be completed prior to the Submission Deadline. View our Knowledge Base article [here](https://www.herox.com/help/93-guide-changing-team-captain) for how to change Team Captains.
+
+Judging Panel:
+
+The determination of the winners will be made by a group of people appointed by the sponsors of this challenge, with relevant experience in the challenge topic area.
+
+Additional Information
+
+   By participating in the challenge, each competitor agrees to adhere to the [HeroX Intellectual Integrity Policy](https://www.herox.com/intellectual-integrity-policy) and promises to submit only their original idea. Any indication of "copying" amongst competitors is grounds for disqualification.
+   All applications will go through a process of due diligence; any application found to be misrepresentative, plagiarized, or sharing an idea that is not their own will be automatically disqualified.
+   All ineligible applicants will be automatically removed from the competition with no recourse or reimbursement.
+   No purchase or payment of any kind is necessary to enter or win the competition.
+   Void wherever restricted or prohibited by law. 
+
+solve this challenge
+
+[View legal agreement](https://www.herox.com/CancerNavigationDataChallenge/legal-agreement-view)
+
+Timeline
+
+Updates2
+
+Challenge Updates
+-----------------
+
+[New Resources Available - Transforming Cancer Navigation with Open Data & APIs Challenge](https://www.herox.com/CancerNavigationDataChallenge/update/7520)
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Jan. 24, 2025, 4:53 a.m. PST by [Jamie Elliott](https://www.herox.com/crowdsourcing-community/jamieelliott-235698)
+
+We've added several new resources to support your participation in the challenge:
+ mCODE Core Implementation Guide Testing Suite (2024) A comprehensive guide for API conformance testing of prioritized mCODE profiles, including alignment with USCDI+ for Cancer and EOM requirements.
+ Gravity Project Resources Essential reference materials for social determinants of health data standardization.
+ Cancer Care - PROMs Implementation Toolkit Guidance for implementing Patient-Reported Outcome Measures in cancer care settings.
+ Multiple Chronic Conditions (MCC) eCare Plan Resources Implementation materials for electronic care planning focused on multiple chronic conditions.
+ Person-Centered Outcomes (PCO) Framework Documentation on incorporating patient-centered outcome measures.
+ Additional Information and Related Resources Supplementary materials to support your implementation work.
+
+Visit the challenge page \[[link](https://www.herox.com/CancerNavigationDataChallenge/resources)\] to access these resources and begin exploring. These materials will help you develop and test your mCODE-compliant solutions.
+
+The test suite is particularly relevant for those working on API conformance testing for mCODE Core profiles. It provides specific guidance for implementing key data elements like cancer patient information, primary cancer conditions, disease status, TNM staging, and tumor markers.
+
+[leave a comment](https://www.herox.com/CancerNavigationDataChallenge/update/7520#comments)
+
+[Transforming Cancer Navigation with Open Data & APIs Challenge is now officially open for submission!](https://www.herox.com/CancerNavigationDataChallenge/update/7443)
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Jan. 13, 2025, 6 a.m. PST by [Lulu](https://www.herox.com/crowdsourcing-community/lulu-3043)
+
+And so it begins!
+
+As of today, you now have access to the full guidelines of the challenge so you can begin working on your solutions.
+
+To begin, click the “Solve this Challenge” button. Once you’ve accepted the legal agreement, you’ll be officially signed up as a competitor.
+
+If you’re ever feeling stuck, the [challenge forum](https://www.herox.com/CancerNavigationDataChallenge/forum) is the first place to go. The forum is there for you to ask questions and seek advice. Bounce ideas around, get to know your fellow innovators, and maybe even form a team (more on that later).
+
+Now get cracking! We can’t wait to see what you come up with.
+
+[leave a comment](https://www.herox.com/CancerNavigationDataChallenge/update/7443#comments)
+
+Forum3
+
+Teams103
+
+Resources
+
+FAQ
+
+Other Challenges You May Be Interested In
+-----------------------------------------
+
+    [![Image 12](https://d253pvgap36xx8.cloudfront.net/static/images/powered-by-text.svg) ![Image 13](https://d253pvgap36xx8.cloudfront.net/static/images/logo-white.svg) ![Image 14](https://d253pvgap36xx8.cloudfront.net/challenges/thumbnail/11741152c54c11ef8b19face879e4965/112ecc64c54c11ef9490cab9b7c8fbae.jpeg) ![Image 15](https://secure.gravatar.com/avatar/17064f0c6bae9ffbaae45f7ce557c253.jpg?s=80&d=identicon&r=g) by Andrew Kamal 12 The Global Sociophysics and Blockchain Challenge Employ BitBadges as a means to develop technological use cases through the implementation of gated NFTs. Enter \- 35 Days Remaining $300 Prize](https://www.herox.com/sociophysics?from=recommended-challenge)
+
+    [![Image 16](https://d253pvgap36xx8.cloudfront.net/static/images/powered-by-text.svg) ![Image 17](https://d253pvgap36xx8.cloudfront.net/static/images/logo-white.svg) ![Image 18](https://d253pvgap36xx8.cloudfront.net/challenges/thumbnail/c7fbbba0d4bb11eeadfbe660d4be7d6a/c7b2eefcd4bb11eea2cb82fc623d6599.jpeg) ![Image 19](https://d253pvgap36xx8.cloudfront.net/groups/logothumbnail/635ad956a04f11ee91797ecc3fa5a09f/62f02f70a04f11ee8d6b22917381edfa.png) by Standard Industries 226 Standard Industries Chemical Innovation Challenge Advancing AI-Assisted Molecular Synthesis Enter \- 43 Days Remaining $1.4M Prize](https://www.herox.com/SIChallenge?from=recommended-challenge)
+
+ [![Image 20](https://d253pvgap36xx8.cloudfront.net/challenges/videothumbnail/4886ba40243011efb78e8a9e0b81bc75.jpeg) ![Image 21](https://d253pvgap36xx8.cloudfront.net/avatars/f2a81580bbaa11eebb135a381d1e73fd/f28a692cbbaa11eebb135a381d1e73fd.png) by GoAERO Prize 1.4K GoAERO Prize Design and build a safe, portable, robust, autonomy-enabled Emergency Response Flyer. Enter $2M Prize](https://www.herox.com/goaero?from=recommended-challenge)
+
+![Image 22: Home](https://d253pvgap36xx8.cloudfront.net/static/images/logo-white.svg)
+
+![Image 23: Home](https://d253pvgap36xx8.cloudfront.net/static/images/logo-white.svg)
+
+Be the first to know
+
+when new crowdsourcing projects are posted
+
+ subscribe
+
+about herox
+
+   [about us](https://www.herox.com/about)
+   [press kit](https://www.herox.com/press-kit)
+   [partner with us](https://www.herox.com/partnerships)
+   [partners](https://www.herox.com/partners)
+   [careers](https://www.herox.com/work-with-us)
+   [privacy](https://www.herox.com/privacy-policy)
+   [terms](https://www.herox.com/terms-of-use)
+   [cookie policy](https://www.herox.com/cookie-policy)
+
+community
+
+   [blog](https://www.herox.com/blog)
+   [organizations involved](https://www.herox.com/crowdsourcing-projects/crowdsourcing-companies)
+   [events & webinars](https://www.herox.com/events)
+   [community](https://www.herox.com/crowdsourcing-community)
+   [general forums](https://www.herox.com/forum)
+
+support
+
+   [contact us](https://www.herox.com/i-want-to-launch-challenge)
+   [how HeroX works](https://www.herox.com/how-it-works)
+   [knowledge base](https://www.herox.com/help)
+   [FAQ](https://www.herox.com/faq)
+   [innovation resources](https://www.herox.com/innovation-resources)
+
+Be the first to know
+
+when new crowdsourcing projects are posted
+
+ subscribe
+
+[](https://www.instagram.com/beherox/ "HeroX on Instagram")[](https://www.facebook.com/IamHeroX "HeroX on Facebook")[](https://twitter.com/iamherox "HeroX on Twitter")[](https://linkedin.com/company/herox "HeroX on LinkedIn")[](https://www.youtube.com/channel/UCzvAiGkFmx1JqomRoM71buw "HeroX on Youtube")
+
+© Copyright HeroX 2025
+
+Was this page helpful? yes no
+
+Please tell us why. The suspense is killin' us!
+
+submit
+
+Thank You!
+
+Your feedback is always welcome!

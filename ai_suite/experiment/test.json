@@ -1,0 +1,24 @@
+{
+  "title": "Good Jobs in Clean Energy Prize",
+  "url": "https://www.herox.com/GoodJobsPrize",
+  "organizer": "American-Made Challenges",
+  "prize_pool": {
+    "prize_pool": 3375000.0,
+    "prize_pool_currency": "USD",
+    "minimum_individual_prize": 50000.0,
+    "maximum_individual_prize": 300000.0
+  },
+  "submission_deadline": "2025-01-31",
+  "key_objective": "Encourage coalition-building in communities across the country to create quality jobs and foster an equitable and inclusive workforce in clean energy sectors.",
+  "judging_criteria": [
+    "Identifying a clean energy employment opportunity and workforce challenge in a specific sector and target community",
+    "Displaying robust partnerships that include at least one organization from each of the five stakeholder types: labor organization, clean energy employer, community-based organization, public agency, and education and workforce provider."
+  ],
+  "classification_keywords": [
+    "Clean Energy",
+    "Workforce Development",
+    "Coalition Building",
+    "Job Quality",
+    "Job Access"
+  ]
+}

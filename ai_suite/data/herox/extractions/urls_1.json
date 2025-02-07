@@ -1,0 +1,62 @@
+{
+  "challenge_listing_urls": [
+    {
+      "url": "https://www.herox.com/NASASouthPoleSafety",
+      "stage": "open"
+    },
+    {
+      "url": "https://www.herox.com/communitydisabilityhealth",
+      "stage": "open"
+    },
+    {
+      "url": "https://www.herox.com/A2APublicParksCleaning",
+      "stage": "won"
+    },
+    {
+      "url": "https://www.herox.com/goaero",
+      "stage": "open"
+    },
+    {
+      "url": "https://www.herox.com/ScienceSynthesis",
+      "stage": "closed"
+    },
+    {
+      "url": "https://www.herox.com/hbcu-round2",
+      "stage": "open"
+    },
+    {
+      "url": "https://www.herox.com/2025renewschoolsprize",
+      "stage": "open"
+    },
+    {
+      "url": "https://www.herox.com/GUIDE-H2",
+      "stage": "open"
+    },
+    {
+      "url": "https://www.herox.com/sociophysics",
+      "stage": "open"
+    },
+    {
+      "url": "https://www.herox.com/EnergyTechUP",
+      "stage": "open"
+    },
+    {
+      "url": "https://www.herox.com/GoodJobsPrize",
+      "stage": "open"
+    },
+    {
+      "url": "https://www.herox.com/GHPPATHS",
+      "stage": "open"
+    }
+  ],
+  "pages_urls": [
+    "https://www.herox.com/crowdsourcing-projects?page=1&search=",
+    "https://www.herox.com/crowdsourcing-projects?page=2&search=",
+    "https://www.herox.com/crowdsourcing-projects?page=3&search=",
+    "https://www.herox.com/crowdsourcing-projects?page=4&search=",
+    "https://www.herox.com/crowdsourcing-projects?page=5&search=",
+    "https://www.herox.com/crowdsourcing-projects?page=6&search=",
+    "https://www.herox.com/crowdsourcing-projects?page=55&search=",
+    "https://www.herox.com/crowdsourcing-projects?page=56&search="
+  ]
+}

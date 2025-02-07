@@ -1,0 +1,9 @@
+field,total,correct,missing,accuracy
+patient_id,15,15,0,100.0
+diagnosis,15,12,1,80.0
+medications,15,13,2,86.7
+treatment_plan,15,11,3,73.3
+lab_results,15,14,0,93.3
+follow_up_date,15,15,0,100.0
+allergies,15,14,1,93.3
+vital_signs,15,13,2,86.7 

@@ -1,0 +1,31 @@
+{
+  "url": "https://www.herox.com/communitydisabilityhealth",
+  "model": "ChallengeDetails",
+  "timestamp": "2025-01-26T21:00:47.870075",
+  "extractions": [
+    {
+      "title": "Community Champions for Disability Health Challenge",
+      "url": "https://www.herox.com/communitydisabilityhealth",
+      "organizer": "Eunice Kennedy Shriver National Institute of Child Health and Human Development",
+      "prize_pool": {
+        "prize_pool": 485000.0,
+        "prize_pool_currency": "USD",
+        "minimum_individual_prize": 25000.0,
+        "maximum_individual_prize": 75000.0
+      },
+      "submission_deadline": "2024-11-01",
+      "key_objective": "This challenge calls upon community groups with experience serving people with disabilities to lead the way in proposing solutions that can reduce health disparities.",
+      "judging_criteria": [
+        "Team/Organization",
+        "The Proposal/Solution",
+        "Potential Impact",
+        "Innovation"
+      ],
+      "classification_keywords": [
+        "Healthcare",
+        "Disability Health",
+        "Health Equity"
+      ]
+    }
+  ]
+}

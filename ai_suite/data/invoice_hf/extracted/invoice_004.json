@@ -1,0 +1,44 @@
+{
+  "client_name": "Huerta-Cortez",
+  "client_address": "22697 Hamilton Ranch, New Samanthaon, AR 01797",
+  "invoice_date": "2020-09-26",
+  "items": [
+    {
+      "description": "YILONG 5'x7.5' Handknotted Silk Carpet Whirlwind Home Decor Classic Rug 0807",
+      "quantity": "3",
+      "price_per_unit": "2800",
+      "total_amount": "9240"
+    },
+    {
+      "description": "Yilong 8x10ft Hand knotted Wool Carpets Home Decor Modern Villa Area Rug P39",
+      "quantity": "2",
+      "price_per_unit": "5040",
+      "total_amount": "11088"
+    },
+    {
+      "description": "Yilong 5'x7' Handknotted Silk Carpet Home Interior Classic Luxury Area Rug 1047",
+      "quantity": "4",
+      "price_per_unit": "8400",
+      "total_amount": "36960"
+    },
+    {
+      "description": "Leopard Printed Rug Skin Mat Leather Faux Fur Animals Area Rugs Home Carpets",
+      "quantity": "4",
+      "price_per_unit": "19.49",
+      "total_amount": "85.76"
+    },
+    {
+      "description": "Black+White Rectangle Shape Area Rug Carpet Floor Pad Doormat Mats Non-slip Z4F9",
+      "quantity": "3",
+      "price_per_unit": "21.1",
+      "total_amount": "69.63"
+    },
+    {
+      "description": "Philadelphia Eagles Anti-Skid Area Rug Soft Floor Mat Carpet Living Room Bedroom",
+      "quantity": "2",
+      "price_per_unit": "18.04",
+      "total_amount": "39.69"
+    }
+  ],
+  "total_value": "57483.07"
+}

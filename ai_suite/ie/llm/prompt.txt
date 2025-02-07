@@ -1,0 +1,242 @@
+Your are a supervisor in an information extraction task.  The task is to collect information about a vanture capital fond based on the information which is provided on its website. I will give you  4 data models, a top URL and a list of additional URLs. Your task is:
+1. visit the top URL, collect its content, decide which data models could be applied, extract informations from the content based on the applied models, evaluate whether all data for all models could be found and output summary of the steps done and evaluation summary in form of a json. You are allowed to only extract data from the content of the given URL. Do not use any other sources of information. The truth of the extracted data is much more important than the completeness.
+2. After the evaluation of the completeness of the mined data use the list of additional URLs and decide which one should be visited next to find missing data. Output json with the keys: "url_to_visit", "explaination", "how_sure_you_are_that_you_can_find_missing_data_here".
+3. Repeat steps 1 and 2 until all data is found or you run out of URLs to visit.
+4. Output a json with all the data found.
+There are 4 data models: InvestorInfo, MoneyInfo, RestrictionsInfo, RoundsInfo and some helper classes: ContactInfo, Entity, FlagEntity, MonetaryAmount
+Helper classes:
+class BaseValidatedEntity(BaseModel):
+    """Base class for entities that need validation against text chunks"""
+    citation: str = Field(
+        ..., description="A direct quote from the text that bears facts supporting other fields of the extracted entity."
+    )
+    validated: bool = False
+
+    @model_validator(mode="after")
+    def validate_citation(self, info: ValidationInfo) -> "BaseValidatedEntity":
+        if info and info.context:
+            text_chunks = info.context.get("text_chunk", None)
+            if text_chunks and tnorm(self.citation) in tnorm(text_chunks):
+                self.validated = True
+        return self
+
+class Entity(BaseValidatedEntity):
+    content: str = Field(
+        ..., description="Text or phrase that represents the entity and needs validation."
+    )
+    content_validated: bool = False
+
+    @model_validator(mode="after")
+    def validate(self, info: ValidationInfo) -> "Entity":
+        if not info or not info.context:
+            return self
+        text_chunks = info.context.get("text_chunk", None)
+
+        # Extract text from Markdown-style links
+        def extract_text_from_markdown_link(text):
+            return re.sub(r'\[([^\]]+)\]\([^\)]+\)', r'\1', text)
+
+        self.citation = extract_text_from_markdown_link(self.citation)
+
+        # Validate citation in text chunks
+        if text_chunks and self.citation:
+            self.validated = tnorm(self.citation) in tnorm(text_chunks)
+            
+        # Validate content in citation
+        if self.citation and self.content:
+            self.content_validated = tnorm(self.content) in tnorm(self.citation)
+        
+        return self
+class ContactInfo(BaseModel):
+    url: HttpUrl
+    validated: bool = False
+
+    @model_validator(mode="after")
+    def validate(self, info: ValidationInfo) -> "ContactInfo":
+        if info and info.context:
+            text_chunks = info.context.get("text_chunk", None)
+            url_str = str(self.url)
+            if text_chunks and url_str in text_chunks:
+                self.validated = True
+            # remove trailing slash from url_str
+            url_str = url_str.rstrip('/')
+            if text_chunks and url_str in text_chunks:
+                self.validated = True   
+        return self
+class FlagEntity(BaseValidatedEntity):
+    flag: bool = Field(
+        ..., description="Boolean flag indicating the presence of the characteristic."
+    )
+
+class MonetaryAmount(BaseValidatedEntity):
+    amount: float = Field(
+        ..., description="The amount of money expressed in base units without abbreviations. If amount is expressed in thousands, millions or billions, use correct expanded form as the amount. E.g.: 1000000 for 1 million, 1000000 for 1m, 1000 for 1k, 1000000000 for 1 billion etc"
+    )
+    currency: str = Field(
+        ..., description="ISO 4217 currency code (3 characters). Examples: USD, EUR, GBP, JPY, CHF, CNY, CAD"
+    )
+    amount_validation: Optional[bool] = None
+
+helper classes for restrictions:
+class TargetGroup(str, Enum):
+    INDUSTRY = "industry"  # Refers to the industries the startup focuses on or is restricted to
+    ROUNDS = "rounds"  # Refers to the investment rounds the startup is involved in
+    BUSINESS_MODEL = "business_model"  # Refers to the type of business model the startup employs
+
+    LEGAL_ENTITY_LOCATION_OF_STARTUP = "legal_entity_location_of_startup"  # Refers to the restrictions concerning the legal registration location of the startup, do not confuse with the registered investor location
+    GEOGRAPHY_OF_INVESTMENT = "geography_of_investment"  # Refers to the geographical areas where the investor is willing to invest or which are excluded from investment
+    GEOGRAPHY_OF_STARTUP_REVENUE = "geography_of_startup_revenue"  # Refers to the geographical distribution of the startup's revenue
+
+    TOTAL_REVENUE = "total_revenue"  # Refers to the total revenue criteria for the startup
+    CURRENT_MONTHLY_REVENUE = "current_monthly_revenue"  # Refers to the current monthly revenue criteria for the startup
+
+    ALUMNI = "alumni"  # Refers to whether the startup's founders are alumni of certain institutions
+    FEMALE_FOUNDERS = "female_founders"  # Refers to whether the startup is required to have female founders
+    FOUNDERS_OF_COLOR = "founders_of_color"  # Refers to whether the startup is required to have founders of color
+    LGBTQ_FOUNDERS = "lgbtq_founders"  # Refers to whether the startup is required to have LGBTQ+ founders
+    VETERAN_FOUNDERS = "veteran_founders"  # Refers to whether the startup is required to have veteran founders
+    FOUNDER_NATIONALITY = "founder_nationality"  # Refers to the nationality of the startup's founder(s)
+
+    ETHICAL_CONCERNS = "ethical_concerns"  # Refers to ethical concerns such as environmentally harmful operations, human rights violations, etc.
+    OTHER = "other"  # Refers to any other restrictions and policies not covered by the above categories
+
+class Policy(str, Enum):
+    PREFERRED = "preferred"
+    REQUIRED = "required"
+    FORBIDDEN = "forbidden"
+    NEUTRAL = "neutral"
+
+
+class Restriction(BaseModel):
+    target_group: TargetGroup = Field(
+        ...,
+        description=(
+            "The specific feature or attribute of the startup that the restriction targets. "
+            "This could concern the startup's origin, business location, business model, industries, "
+            "founder nationality, legal entity location, revenue criteria, alumni status, diversity status, "
+            "round size, or other specified characteristics. "
+            "Classify statements about industries under 'industry', and statements about ethical concerns, environmental impact, human rights, or sustainability under 'ethical_concerns'."
+        )
+    )
+    citation: str = Field(
+        ...,
+        description="Original citation or source text from which the target_group of the restriction and its policy are derived. The citation should be a substring of the original text and can be a phrase, a sentence, or a paragraph."
+    )
+    content: list[str] = Field(..., description="Specifies the one or several values of the target group, e.g. region name like 'Germany' or group label like 'female owner'.")
+
+    is_target_group_required_or_forbidden: Policy = Field(
+        ...,
+        description = "Indicates whether the target group is preferred ('preferred'), required or in focus ('required'), "
+            "strictly forbidden ('forbidden'), or neutral ('neutral'). The 'neutral' value indicates inclusivity "
+            "or a lack of explicit preference or restriction regarding the target group."
+    )
+
+    validated: bool = False
+    @model_validator(mode="after")
+    def validate_citation(self, info: ValidationInfo) -> "Restriction":
+        if info and info.context:
+            text_chunk = info.context.get("text_chunk", None)
+            if text_chunk is None:
+                raise ValueError("Context 'text_chunk' is missing or None.")
+            if text_chunk and tnorm(self.citation) in tnorm(text_chunk):
+                self.validated = True
+        return self
+
+main data models:
+InvestorInfo:
+class InvestorInfo(BaseModel):
+    fund_name: Entity = Field(
+        ..., description="Represents the name of the investor."
+    )
+    website: Optional[ContactInfo] = Field(
+        None, description="Represents the website of the investor."
+    )
+    linkedin: Optional[ContactInfo] = Field(
+        None, description="Represents the LinkedIn profile of the investor."
+    )
+    twitter: Optional[ContactInfo] = Field(
+        None, description="Represents the Twitter handle of the investor."
+    )
+    is_alive: Optional[FlagEntity] = Field(
+        None, description="Indicates whether the investor fund is currently active."
+    )
+    investor_type: Optional[List[Entity]] = Field(
+        None, description="Categorizes the structure and focus of investment firms. Examples: Venture Capital, "
+                         "Corporate Venture Capital, Family office, Private Equity, Venture debt, Accelerator/Incubator"
+    )
+    fund_main_location: Optional[List[Entity]] = Field(
+        None, description="Only the head office address"
+    )
+    industry_generalist: Optional[FlagEntity] = Field(
+        None, description="Indicates whether the investor fund can invest in any indusrty, is generalist."
+    )
+    industry_focus: Optional[List[Entity]] = Field(
+        None, description="Industry focus as listed on the investor's website, all verticals mentioned."
+    )
+    russian_affiliated: Optional[FlagEntity] = Field(
+        None,
+        description="Indicates whether the fond could be labeled as Russian affiliated, e.g. having founders with Russian names or Russian locations in any context."
+    )
+    how_to_pitch: Optional[List[Entity]] = Field(
+        None,
+        description="Provide the specific contact information for pitching to the investor. This could be multiple "
+                   "methods like email addresses, contact forms, etc."
+    )
+
+class MoneyInfo(BaseModel):
+    check_min: Optional[MonetaryAmount] = Field(
+        None, description="Minimum amount of money a fund invests in a startup in a deal."
+    )
+    check_max: Optional[MonetaryAmount] = Field(
+        None, description="Maximum amount of money a fund invests in a startup in a deal"
+    )
+    check_average: Optional[MonetaryAmount] = Field(
+        None, description="Average amount of money a fund invests in a startup in a deal."
+    )
+    assets_under_management: Optional[MonetaryAmount] = Field(
+        None, description="Size of the investment fund managed by the investor if stated."
+    )
+    fund_size: Optional[MonetaryAmount] = Field(
+        None, description="Information about the raised or closed fund. The amount of money in the fund."
+    )
+    fund_raised_date: Optional[Entity] = Field(
+        None, description="Date when the fund was raised or closed."
+    )
+
+class RoundsInfo(BaseModel):
+    investment_stages_and_rounds: List[StageEntity] = Field(
+        ..., description="Investment stage and/or funding round the fund participates in. Make one entry for each stage and/or round."
+    )
+    stages_generalist: Optional[FlagEntity] = Field(
+        None, description="Indicates whether the fund states that it invests in any stage or round, is generalist."
+    )
+
+class RestrictionsInfo(BaseModel):
+    """Represents a collection of restrictions which a given investor fund imposes on its potential portfolio companies."""
+
+    restrictions: list[Restriction] = Field(
+        ...,
+        description="A list of restrictions that apply to the startup dataset."
+    )
+    industry_generalist: Optional[FlagEntity] = Field(
+        None, description="Indicates whether the investor fund can invest in any indusrty, is generalist."
+    )
+    geo_generalist: Optional[FlagEntity] = Field(
+        None, description="Fund invests in any geographic region, with no specific location restrictions or preferences."
+    )
+
+
+Top url: {https://auxxo.de}
+Additional URLs: {https://auxxo.de/contact/,
+https://auxxo.de/get-funded/,
+https://auxxo.de/esg-policy/,
+https://auxxo.de/code-of-conduct/,
+https://auxxo.de/sfdr/,
+https://auxxo.de/whistleblowing/,
+https://auxxo.de/privacy-policy/,
+https://auxxo.de/imprint/,
+https://auxxo.de/about/,
+https://auxxo.de/portfolio/}
+
+
+

@@ -1,0 +1,142 @@
+using what we discussed, please write separate evaluator classes for the tasks which I will define.
+
+each evaluator should use ask_LLM function form the provided script.
+
+each evalutor should contain section for system prompt building, context building, pydantic response model and the rest
+
+provide also the main system prompts  and response model based on pydantic models for each evaluator.
+
+task 1: finds fields with null or missing information 
+
+input: json with extracted entities
+
+output: 
+
+fieldname: "..."
+
+explanation: "whole field missing, feature is missing"
+
+description for the missing field: "..." e.g.: information about ...
+
+task 2: evaluate information extraction result based on text content
+
+input: json containing extracted fields, text content on which extractions were made
+
+output:
+
+field_name -> List[entity1 -> EvalModel, entity2 -> EvalModel, ...]
+
+task 3: evaluate information extraction result based on ground truth
+
+input: json with extractions, json with ground truth values, here the dynamic field mapping will be crucial
+
+output model:
+
+field_name_ground_truth
+
+field_name_test (mapped)
+
+list[ent1, ent2 ... -> EvalModel
+
+Input for EvalModel:
+
+entity_info_missing: boolean, decription: True if info is null, empty, zero or has default value, False otherwise
+
+entity_info_correct: boolean
+
+explataion_for_correct_or_wrong: str
+
+entity_info_partial: boolean
+
+explanation_partial: str
+
+Here is also some input infos about possible entity types and dealing with them for the system prompts where needed:
+
+  You are an evaluator of extracted entities. The extracted data may contain:
+
+1. Simple (Content) Entities  
+
+   - Store text or numeric values as their primary content. 
+
+   - Validate as correct WHEN:  
+
+  a) All content elements are correct, provide ground truth source
+
+2. Boolean/Flag Entities  
+
+   - Indicate the presence or absence of a particular characteristic (true/false).
+
+   - Validate as correct WHEN:  
+
+  a) Flag state matches ground truth reality  
+
+  b) Citation directly supports the flag
+
+3. Enumeration (Classified) Entities  
+
+   - Contain a content field (original text) plus a classified enum field.
+
+   Correct if classification and content correct
+
+4. Complex Entities with Nested Attributes  
+
+   - May include multiple internal fields (e.g., a textual content field, an enum classification, a boolean flag, etc.).
+
+   - Treat the combination of fields as a single logical unit during evaluation.
+
+5. Lists of Entities  
+
+   - If data has arrays of repeating items (e.g., multiple restrictions, multiple funding rounds), treat each item in the list as a separate entity to evaluate.
+
+### Important Notes
+
+- Labels May Differ: The entity labels (keys or field names) do not necessarily match between the test JSON and the ground truth. Your task is to determine the best possible mapping between them, based on the information provided, so you can compare the correct pairs of fields.
+
+- Ignore Citation/Validation Fields: Many entities include “helping fields” (e.g., citations, validated flags, or metadata) intended only for reference or validation. Exclude these from your correctness checks, as if they do not exist.
+
+---
+
+### Evaluation Criteria
+
+For each entity (including each item in a list if it’s a list-type entity), determine:
+
+1. Entity Extracted (Non-Null, Non-Empty, Non-Zero)  
+
+   - True if the entity is present with a meaningful value.  
+
+   - False if it is missing, null, empty string, or zero when it should not be.
+
+2. Is the Entity Correct?  
+
+   - True if the entity’s relevant (non-validation) fields fully match the ground truth.  
+
+   - False if the entity differs significantly.  
+
+   - Provide a brief explanation for why it’s correct or incorrect (e.g., “Values match exactly,” “Classification is different from ground truth,” etc.).
+
+3. Is the Entity Partially Correct?  
+
+   - True if only some subfields match while others differ (or only part of the content is aligned).  
+
+   - False otherwise.  
+
+   - Provide a brief explanation of what is partially correct (e.g., “Text content matches but the enum classification is incorrect,” etc.).
+
+---
+
+### Output Format
+
+Please produce a structured response for each entity (or each item in a list) with the following fields:
+
+1. entity_extracted (boolean)  
+
+2. entity_correct (boolean)  
+
+3. explanation_correctness (short text)  
+
+4. entity_partially_correct (boolean)  
+
+5. explanation_partial (short text)
+
+If there are multiple entities, repeat this structure for each, so we have a complete evaluation breakdown.
+

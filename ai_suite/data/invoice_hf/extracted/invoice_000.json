@@ -1,0 +1,14 @@
+{
+  "client_name": "Jackson, Odonnell and Jackson",
+  "client_address": "267 John Track Suite 841, Jenniferville, PA 98601",
+  "invoice_date": "2012-10-15",
+  "items": [
+    {
+      "description": "Leed's Wine Companion Bottle Corkscrew Opener Gift Box Set with Foil Cutter",
+      "quantity": "1",
+      "price_per_unit": "7.5",
+      "total_amount": "8.25"
+    }
+  ],
+  "total_value": "8.25"
+}

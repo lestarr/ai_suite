@@ -1,0 +1,38 @@
+{
+  "client_name": "Bailey-Harris",
+  "client_address": "106 Michael Street, North William, DC 96680",
+  "invoice_date": "2014-07-06",
+  "items": [
+    {
+      "description": "Chindi Rugs Carpet New Design Bohemian Garden Yoga Mat Indian Kilim Counterpane",
+      "quantity": "2",
+      "price_per_unit": "29.99",
+      "total_amount": "65.98"
+    },
+    {
+      "description": "Xmas Christmas Rug Carpet Cartoon Bedroom Kids Play Mat Soft Flannel Area Rugs",
+      "quantity": "3",
+      "price_per_unit": "37.31",
+      "total_amount": "123.12"
+    },
+    {
+      "description": "Bohemian Rag Rug- Woven Chindi Dari Living Room Rug / Hand-Woven Carpet Rug-Mats",
+      "quantity": "2",
+      "price_per_unit": "23.39",
+      "total_amount": "51.46"
+    },
+    {
+      "description": "Rug Beni Ourain, Moroccan Handmade 100% Wool Area Rug Berber Beni Ourain Carpet",
+      "quantity": "3",
+      "price_per_unit": "450",
+      "total_amount": "1485"
+    },
+    {
+      "description": "40x120CM Christmas Door Mat Kitchen Floor Area Rug Bedroom Living Room Carpet",
+      "quantity": "2",
+      "price_per_unit": "18.99",
+      "total_amount": "41.78"
+    }
+  ],
+  "total_value": "1767.34"
+}

@@ -1,0 +1,33 @@
+{
+  "url": "https://www.herox.com/A2APublicParksCleaning",
+  "model": "ChallengeDetails",
+  "timestamp": "2025-01-26T21:00:47.878078",
+  "extractions": [
+    {
+      "title": "High-Tech Autonomous Bin Emptying System",
+      "url": "https://www.herox.com/A2A",
+      "organizer": "A2A Group",
+      "prize_pool": {
+        "prize_pool": 60000.0,
+        "prize_pool_currency": "USD",
+        "minimum_individual_prize": null,
+        "maximum_individual_prize": null
+      },
+      "submission_deadline": "2024-10-28",
+      "key_objective": "The goal of the 'Autonomous Bin Emptying System' challenge is to find a new solution to significantly reduce the number of teams and vehicles currently used to empty bins every day and centralize waste collection in one place.",
+      "judging_criteria": [
+        "Must have: Being able to operate outdoors, both in summer and winter and, possibly, even in the rain and must be easy to use and/or to program.",
+        "It must minimize exposure to risk for those who frequent the park and operate constantly throughout the week.",
+        "If an autonomous/automatic solution, if necessary, an operator must still be able to intervene manually in case of need or emergency situations (also remotely).",
+        "If the solution requires it, it must be able to move not only on asphalt but also on dirt or gravel roads.",
+        "In general, must minimize the use of personnel (quantity and/or time necessary for cleaning) and motorized vehicle inside the park with high level of efficiency and efficacy."
+      ],
+      "classification_keywords": [
+        "Energy",
+        "Environment & Resources",
+        "Engineering",
+        "Technology"
+      ]
+    }
+  ]
+}

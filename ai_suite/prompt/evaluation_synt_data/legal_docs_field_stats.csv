@@ -1,0 +1,10 @@
+field,total,correct,missing,accuracy
+case_number,12,12,0,100.0
+parties_involved,12,10,1,83.3
+filing_date,12,12,0,100.0
+jurisdiction,12,11,0,91.7
+legal_claims,12,9,2,75.0
+relief_sought,12,8,3,66.7
+court_orders,12,10,1,83.3
+deadlines,12,11,0,91.7
+citations,12,9,2,75.0 

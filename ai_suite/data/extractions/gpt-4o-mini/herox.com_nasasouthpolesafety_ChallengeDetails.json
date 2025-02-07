@@ -1,0 +1,30 @@
+{
+  "url": "https://www.herox.com/NASASouthPoleSafety",
+  "model": "ChallengeDetails",
+  "timestamp": "2025-01-26T21:00:47.868077",
+  "extractions": [
+    {
+      "title": "South Pole Safety: Designing the NASA Lunar Rescue System",
+      "url": "https://www.herox.com/NASASouthPoleSafety",
+      "organizer": "NASA Tournament Lab",
+      "prize_pool": {
+        "prize_pool": 45000.0,
+        "prize_pool_currency": "USD",
+        "minimum_individual_prize": 5000.0,
+        "maximum_individual_prize": 20000.0
+      },
+      "submission_deadline": "2025-02-06",
+      "key_objective": "Create a compact, efficient system for astronaut rescue on the lunar surface - helping ensure swift, safe evacuation in extreme conditions.",
+      "judging_criteria": [
+        "Innovation (20%)",
+        "Essential Performance Criteria (55%)",
+        "Additional Considerations (25%)"
+      ],
+      "classification_keywords": [
+        "Engineering",
+        "Government",
+        "Space"
+      ]
+    }
+  ]
+}

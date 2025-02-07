@@ -1,0 +1,6 @@
+document,total,correct,missing,accuracy
+contract_2024_001.json,9,8,1,88.9
+lawsuit_filing_123.json,9,7,2,77.8
+court_order_456.json,9,9,0,100.0
+settlement_789.json,9,6,3,66.7
+legal_brief_012.json,9,8,1,88.9 

@@ -1,0 +1,421 @@
+I am modelling an information exploration and collection scenario. The process starts at the url
+the content gets scraped, evlauated if it contains information about our topic and if so - the information will be extracted and eventually merged. If not - we want to explore - to look for possible links contained in the previously scraped text and then iterate over them and repeat the process. 
+All the exploration, extraction and evaluation is done by LLM with structured output. So it needs proper response_models.
+We already have different so called agents, that do parts of work:
+class BaseAgent:
+    """Base class for all agents providing common functionality."""
+    
+    def __init__(
+        self,
+        llm_client: Optional[LLMFactory] = None,
+        model_name: str = None,
+        token_tracker: Optional[TokenUsageTracker] = None,
+        output_dir: str = None,
+        logger: Optional[logging.Logger] = None,
+        **kwargs
+    ):
+        """
+        Initialize base agent.
+        
+        Args:
+            llm_client: LLM factory instance
+            model_name: Name of the model to use
+            token_tracker: Optional TokenUsageTracker instance (will create new if None)
+            output_dir: Optional output directory
+            logger: Optional logger instance (will create new if None)
+        """
+        self.llm_client = llm_client
+        self.model_name = model_name
+        self.token_tracker = token_tracker
+        self.output_dir = output_dir
+        self.errors = []
+        
+        # Setup logging
+        self.logger = logger or logging.getLogger(self.__class__.__name__)
+        self.logger.setLevel(logging.INFO)
+        
+        # Add console handler if none exists
+        if not self.logger.handlers:
+            handler = logging.StreamHandler()
+            formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+            handler.setFormatter(formatter)
+            self.logger.addHandler(handler)
+
+    async def process(self, info: InfoModel) -> InfoModel:
+        """
+        Process input data. Must be implemented by child classes.
+        
+        Args:
+            info: InfoModel instance containing input data and state
+            
+        Returns:
+            Modified InfoModel instance with results
+        """
+        raise NotImplementedError("Child classes must implement process()")
+
+    def log_section(self, title: str):
+        """Log a section header"""
+        self.logger.info(f"\n{'='*20} {title} {'='*20}")
+
+    def log_subsection(self, title: str):
+        """Log a subsection header"""
+        self.logger.info(f"\n{'-'*10} {title} {'-'*10}")
+
+    def log_result(self, result: Dict, result_name: str = "Result"):
+        """Log a result dictionary in a structured way."""
+        self.logger.info(f"\n{result_name}:")
+        for key, value in result.items():
+            self.logger.info(f"{key}: {value}")
+
+    def add_error(self, location: str, error_msg: str):
+        """Add error to the error list with location and message."""
+        self.errors.append({
+            "location": location,
+            "error": str(error_msg)
+        })
+        self.logger.error(f"Error in {location}: {error_msg}")
+
+    def track_usage(self, usage: Dict):
+        """Track token usage if tracker is available."""
+        if self.token_tracker and usage:
+            self.token_tracker.add_usage(usage)
+
+    def get_usage_summary(self) -> Dict:
+        """Get current token usage summary."""
+        if self.token_tracker:
+            return self.token_tracker.get_summary()
+        return {
+            'prompt_tokens': 0,
+            'completion_tokens': 0,
+            'total_tokens': 0,
+            'cost_usd': 0.0
+        }
+
+    def get_errors(self) -> List[Dict]:
+        """Get list of accumulated errors."""
+        return self.errors
+
+    def clear_errors(self):
+        """Clear the error list."""
+        self.errors = []
+
+    def log_errors(self):
+        """Log all accumulated errors."""
+        if self.errors:
+            self.log_subsection("Errors")
+            for error in self.errors:
+                self.logger.error(f"Location: {error['location']}")
+                self.logger.error(f"Error: {error['error']}\n") 
+
+class ScraperResult(BaseModel):
+    """Container for scraped content."""
+    source: str
+    content: str
+    doc_type: str = None
+    content_length: int
+    success: bool = True
+
+class ContentScraperAgent(BaseAgent):
+    """Agent for scraping web content."""
+    
+    def __init__(
+        self,
+        llm_client: LLMFactory,
+        model_name: str,
+        token_tracker: TokenUsageTracker = None,
+        output_dir: str = "ai_suite/data",
+        max_urls: int = None,
+        logger: logging.Logger = None
+    ):
+        """Initialize scraper with output directory."""
+        super().__init__(llm_client, model_name, token_tracker, logger=logger)
+        self.output_dir = output_dir
+        self.max_urls = max_urls
+
+    async def process(self, info: InfoModel) -> InfoModel:
+        """Scrape content from URLs that haven't been seen yet."""
+        self.log_section("Content Scraping")
+        
+        # Apply URL limit if set
+        if self.max_urls:
+            info.urls = info.urls[:self.max_urls]
+            
+        # Get unprocessed URLs
+        urls_to_scrape = [url for url in info.urls if url not in info.seen_urls]
+        if not urls_to_scrape and not info.enable_scraping_rerun:
+            self.logger.info("No new URLs to scrape")
+            return info
+            
+        for url in urls_to_scrape:
+            try:
+                self.log_subsection(f"Scraping URL: {url}")
+                
+                # Check if content already exists
+                normalized_url = normalize_url(url)
+                scraping_dir = os.path.join(self.output_dir, "scraping")
+                existing_file = f"{scraping_dir}/{normalized_url}_scrapped.txt"
+                
+                if os.path.exists(existing_file) and not info.enable_scraping_rerun:
+                    self.logger.info(f"Content already exists at: {existing_file}")
+                    with open(existing_file, 'r', encoding='utf-8') as f:
+                        content = f.read()
+                else:
+                    # Scrape content
+                    content = await get_jina_data_markdown(url, self.logger)
+                    content = clean_markdown(content)
+                    if not content:
+                        self.add_error(f"ContentScraperAgent.process:{url}", "Failed to fetch content")
+                        continue
+                    
+                    # Save content
+                    os.makedirs(scraping_dir, exist_ok=True)
+                    with open(existing_file, 'w', encoding='utf-8') as f:
+                        f.write(content)
+                    self.logger.info(f"Content saved to: {existing_file}")
+                
+                # change input InfoModel
+                text_info = TextInfo(
+                    content=content,
+                    source_url=url,
+                    path=existing_file
+                )
+                info.texts.append(text_info)
+                info.seen_urls.append(url)
+                info.urls.remove(url)
+                
+            except Exception as e:
+                self.add_error(f"ContentScraperAgent.process:{url}", str(e))
+        
+        return info
+
+SYSTEM_PROMPT_DOCTYPE_EXTRACTION = """
+    You are an AI assistant for information extraction and text classification. Your task is to read the text and determine if this text contains information about one of the given document types. Consider given document types as topics which can be found in the text.
+    If you can find the relevant information in the text, return the document type. If not, return "Other". Always give a detailed explanation of your decision.
+"""
+
+class ExtractionAgent(BaseAgent):
+    def __init__(
+        self,
+        llm_client: LLMFactory,
+        model_name: str,
+        project_model: ProjectModel,
+        token_tracker: TokenUsageTracker = None,
+        output_dir: str = None,
+        logger: logging.Logger = None,
+    ):
+        super().__init__(llm_client, model_name, token_tracker, logger=logger)
+        self.project_model = project_model
+        self.extractions_dir = os.path.join(output_dir, "extractions", model_name) if output_dir else None
+
+    def _has_cached_extraction(self, url: str, model_name: str) -> bool:
+        """Check if extraction exists in cache"""
+        if not self.extractions_dir or not url:
+            return False
+        path = os.path.join(self.extractions_dir, f"{normalize_url(url)}_{model_name}.json")
+        return os.path.exists(path)
+
+    async def _check_doc_type(self, text: str, doc_type: str) -> bool:
+        """Check if text matches document type"""
+        if not self.project_model.doc_type_model:
+            return True
+            
+        try:
+            result, usage = extract_with_response_model(
+                text,
+                response_model=self.project_model.doc_type_model,
+                llm_client=self.llm_client,
+                model=self.model_name,
+                system_prompt=SYSTEM_PROMPT_DOCTYPE_EXTRACTION
+            )
+            self.track_usage(usage)
+            doc_type_extracted = result.doc_type if hasattr(result, 'doc_type') else None
+            self.logger.info(f"Document type: {doc_type_extracted}")
+            if doc_type_extracted and doc_type_extracted == doc_type:
+                self.logger.info(f"Document type matches model name: {doc_type_extracted} == {doc_type}")
+                return True
+            else:
+                self.add_error("ExtractionAgent._check_doc_type", f"Document type {doc_type_extracted} does not match {doc_type}")
+                return False
+        except Exception as e:
+            self.add_error("ExtractionAgent._check_doc_type", str(e))
+            return False
+
+    async def process(self, info: InfoModel) -> InfoModel:
+        """Extract information using project model configuration."""
+        self.log_section(f"Information Extraction: {self.project_model.name}")
+        
+        for text in info.texts:
+            try:
+                self.log_subsection(f"Processing text from: {text.source_url or text.path}")
+                
+                for doc_type, model_name in self.project_model.extraction_models.items():
+                    # Skip if cached and rerun not enabled
+                    if not info.enable_extraction_rerun and self._has_cached_extraction(text.source_url, model_name=model_name):
+                        self.logger.info(f"Skipping {model_name} - cached extraction exists")
+                        continue
+
+                    # Check doc type matches model name
+                    if not await self._check_doc_type(text.content, doc_type):
+                        continue
+                    
+                    # Get model class and extract
+                    try:
+                        model_class = globals()[model_name]
+                        self.logger.info(f"Available models: {', '.join(globals().keys())}")
+                        self.logger.info(f"Attempting to extract with model: {model_name}")
+                    except KeyError:
+                        error_msg = f"Model '{model_name}' not found in available models. Please ensure the model is imported."
+                        self.logger.error(error_msg)
+                        self.add_error(f"ExtractionAgent.process:model_lookup", error_msg)
+                        continue
+                    
+                    try:
+                        extraction_result, usage = extract_with_response_model(
+                            text.content,
+                            response_model=model_class,
+                            llm_client=self.llm_client,
+                            model=self.model_name
+                        )
+                        self.track_usage(usage)
+                        
+                        if extraction_result:
+                            text.extractions.append(extraction_result)
+                            self.logger.info(f"Successfully extracted {model_name}: {extraction_result}")
+                        else:
+                            self.logger.warning(f"No extraction result for {model_name}")
+                    
+                    except Exception as e:
+                        self.add_error(f"ExtractionAgent.extract:{model_name}", f"Extraction failed: {str(e)}")
+                        self.logger.error(f"Extraction error for {model_name}: {str(e)}", exc_info=True)
+                
+            except Exception as e:
+                error_msg = f"Processing failed: {str(e)}"
+                self.add_error(f"ExtractionAgent.process:{text.source_url}", error_msg)
+                self.logger.error(error_msg, exc_info=True)
+                
+        return info
+
+        URL_EXTRACTION_PROMPT = """
+Analyze the webpage content and extract the URLs defined in the response model.
+Make sure to extract all the URLs defined in the response model.
+In case of multiple URLs for multiple listings, extract all of them.
+"""
+
+class URLJinaAgent(BaseAgent):
+    def __init__(
+        self, 
+        llm_client: LLMFactory, 
+        model_name: str, 
+        token_tracker: TokenUsageTracker = None,
+        logger: logging.Logger = None,
+        response_model: type[BaseModel] = None,
+        output_dir: str = None
+    ):
+        super().__init__(llm_client, model_name, token_tracker, logger=logger, output_dir=output_dir)
+        self.response_model = response_model
+
+    async def process(self, info: InfoModel) -> InfoModel:
+        """Discover URLs from scraped content"""
+        self.log_section("URL Discovery")
+        
+        discovered_urls = []
+        for text in info.texts:
+            try:
+                self.log_subsection(f"Processing text from: {text.source_url}")
+                result, usage = extract_with_response_model(
+                    text.content,
+                    response_model=self.response_model,
+                    llm_client=self.llm_client,
+                    model=self.model_name
+                )
+                self.track_usage(usage)
+                
+                if result and hasattr(result, 'urls'):
+                    # Convert HttpUrl to string when adding to discovered_urls
+                    urls = [str(url.url) for url in result.urls]
+                    discovered_urls.extend(urls)
+                    self.logger.info(f"Discovered URLs: {urls}")
+            except Exception as e:
+                self.add_error(f"URLJinaAgent.process:{text.source_url}", str(e))
+                self.logger.error(f"Error processing {text.source_url}: {str(e)}")
+        
+        # Add new URLs to info model
+        info.urls.extend([url for url in discovered_urls])
+        info.texts.clear()
+        self.logger.info(f"Total URLs discovered: {len(discovered_urls)}")
+        return info
+
+All agent communicate through the pydantic model InfoModel, which they can change
+Example of ProjectModel:
+class ChallengeStage(str, Enum):
+    OPEN = "open"
+    CLOSED = "closed"
+    COMPLETED = "completed"
+    WON = "won"
+
+class ChallengeURLDetails(BaseModel):
+    url: HttpUrl = Field(..., description="Link to the challenge webpage")
+    stage: ChallengeStage = Field(..., description="The stage of the challenge")
+
+class ChallengeWebsiteUrls(BaseModel):
+    """Model for extracting challenge URLs from listing pages"""
+    
+    urls: List[ChallengeURLDetails] = Field(
+        default=[],
+        description="URLs to individual challenge pages that are currently active/open. These are the direct links to specific challenge details."
+    )
+  
+    pages_urls: List[HttpUrl] = Field(
+        default=[],
+        description="URLs to additional listing pages (pagination/navigation). For example, if there's a 'Next Page' or 'Page 2' link that contains more challenge listings."
+    )
+
+class PrizePool(BaseModel):
+    prize_pool: Optional[float] = Field(None, description="Total monetary prize available")
+    prize_pool_currency: Optional[str] = Field(None, description="Currency of the prize pool")
+    minimum_individual_prize: Optional[float] = Field(None, description="Minimum prize available for an individual")
+    maximum_individual_prize: Optional[float] = Field(None, description="Maximum prize available for an individual")
+
+class ChallengeDetails(BaseModel):
+    title: str = Field(..., description="The name of the challenge")
+    url: HttpUrl = Field(..., description="Link to the challenge webpage")
+    organizer: str = Field(..., description="The organization running the challenge")
+    prize_pool: Optional[PrizePool] = Field(None, description="Monetary prize available")
+    submission_deadline: str = Field(..., description="Submission deadline in YYYY-MM-DD format")
+    key_objective: str = Field(..., description="Brief summary of the challenge's goal")
+    judging_criteria: Optional[List[str]] = Field(None, description="List of judging criteria")
+    classification_keywords: Optional[List[str]] = Field(None, description="Define keywords, which describe the challenge's topic, industry, or sector. These are used to classify the challenge into a topic or industry category, and are used to search for similar challenges.")
+
+class ChallengeDocTypeEnum(str, Enum):
+    CHALLENGE_DETAILS = "ChallengeDetails"
+    SUBMISSION_DETAILS = "SubmissionDetails"
+    JUDGING_CRITERIA = "JudgingCriteria"
+    OTHER = "Other"
+
+class ChallengeDocTypeModel(DocTypeModel):
+    doc_type: ChallengeDocTypeEnum = Field(..., description="Document type, describing what the document is about")
+
+Now to implement this recursive search I need to implement a higher order AI agent which will:
+1. Evaluate the InfoModel and decide what is the next step to take.
+2. Analyze returned InfoModels and bring this all to the final result
+3. Possible states and actions:
+    - Scrape content from the url
+    - Extract information from scraped content
+    - Evaluate if the information is relevant to the doc type - we could split this task, now this step is done in the extraction agent
+    - merge extractions into the final result
+    - evaluate completness of the extraction
+    - explore content for further links
+    - for new links - create new InfoModel and repeat the process
+    - if extracted information is not complete - call model generation agent to generate model for the missing information
+    - If the information is complete, stop the process. The big question is - how to track this and to bring all these states to the done state
+
+    Each new InfoModel should have a counter of how far its url is from the root url. This counter gets incremented each time the agent explores new urls, so the new InfoModel gets the counter of its parent InfoModel + 1. If the counter is greater than 3, the agent should stop exploring the information is merged as it is.
+
+    Maybe this list is not complete.
+
+
+    How would you model and implement this scenario?
+    Ask me questions if you need more information.
+    Agent have to stay agnostic about everything except the InfoModel.
+
+    All components must be most possibly simple and comprehensive and general.

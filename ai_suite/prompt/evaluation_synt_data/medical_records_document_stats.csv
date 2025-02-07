@@ -1,0 +1,6 @@
+document,total,correct,missing,accuracy
+patient_record_1234.json,8,7,1,87.5
+medical_history_5678.json,8,8,0,100.0
+lab_report_9012.json,8,6,2,75.0
+consultation_3456.json,8,7,1,87.5
+emergency_visit_7890.json,8,5,3,62.5 

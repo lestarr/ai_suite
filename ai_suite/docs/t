@@ -1,0 +1,51 @@
+Got it! Here’s an updated draft that clarifies the process where **AI assists in creating the Streamlit app**, which you then use to check results, create dashboards, and evaluate outcomes:
+
+---
+
+### Why I Stopped Using Jupyter Notebook and What Comes Instead
+
+#### The Frustrations of Jupyter Notebooks
+
+When I started using Jupyter Notebooks, I loved the interactive cell-based format, but over time, their limitations became all too clear:
+
+1. **Messy and Fragmented Workflows**: Notebooks often become clusters of scattered code and outputs. Navigating between cells to track down specific functions or debug parts of an experiment quickly turns into a chaotic exercise.
+
+2. **Reload Issues**: Making updates often requires re-running a series of cells in the correct order, which is prone to errors and omissions. It’s easy to lose track of what’s been executed, especially in larger projects.
+
+3. **Excessive Clicking**: Notebooks force you into a highly manual process, executing cells one-by-one to keep things in sync. For complex workflows, this makes experimenting or iterating feel inefficient and cumbersome.
+
+4. **Structural Limitations**: They don’t naturally encourage a well-organized code structure. Without clear boundaries between code, data, and outputs, the workflow lacks the robustness and scalability needed as projects evolve.
+
+---
+
+#### Transitioning to an AI-Assisted Process
+
+Instead of struggling with endless cells and clicks, I now use **AI to rapidly design custom tools** that suit my workflows. Here’s how it works:
+
+1. **Defining the Experiment**: I outline the main functions I need, such as a data extraction pipeline, quality testing, and evaluation processes.
+
+2. **AI-Assisted App Development**: I use AI to quickly generate a functional Streamlit app based on this structure. Within minutes, AI produces a simple yet effective app interface where I can run and check my workflows.
+
+3. **Using the App for Analysis**: The app is then my go-to environment for presenting and evaluating results. I can load data, adjust inputs, and visualize outcomes without the repetitive cell executions typical of a Notebook.
+
+---
+
+#### Benefits of an AI-Created Custom App
+
+By letting AI assist in building a functional app for my experiments and tests, I’ve experienced some key benefits that go beyond what Notebooks could provide:
+
+1. **Time and Effort Savings**: With AI generating the app quickly, I bypass the repetitive setup and execution steps that slowed me down in a Notebook.
+
+2. **Improved Data Presentation**: I can view results in structured dashboards, with options to visualize, filter, and interact with the data seamlessly, making analysis more straightforward.
+
+3. **Enhanced Insights**: Instead of analyzing raw outputs, like JSON files or endless tables, I can use the app’s layout to structure data views that highlight critical insights.
+
+4. **Scalable and Organized**: The generated app provides a centralized location for my pipeline logic and data sources, so I spend less time organizing code and data and more time evaluating outcomes.
+
+5. **Visual Comparison of Results**: Visualizations allow for easy comparisons between different experimental runs or data inputs, making it easy to track changes and variations in outcomes over time.
+
+---
+
+#### A Better Process for Any Data-Centric Task
+
+This process of **using AI to generate tailored apps** feels like a breakthrough for anyone working with data. It’s not just a replacement for Notebooks but also a flexible alternative to Excel, allowing for dynamic, interactive tools that serve specific internal workflows or tasks.

@@ -1,0 +1,59 @@
+{
+  "metadata": {
+    "test_file": "data/test/financial/transaction_log_q1.pdf",
+    "ground_truth_file": "data/test/ground_truth/financial/transaction_log_q1_manual.json",
+    "features": {
+      "model": "gpt-4o",
+      "extraction_type": "auto"
+    },
+    "token_usage": {
+      "prompt_tokens": 2876,
+      "completion_tokens": 756,
+      "total_tokens": 3632
+    }
+  },
+  "results": {
+    "ground_truth_evaluations": [
+      {
+        "field_name_ground_truth": "transaction_type",
+        "field_name_test": "transaction_type",
+        "ground_truth_entity_core_value": "WIRE_TRANSFER",
+        "test_entity_core_value": "WIRE_TRANSFER",
+        "evaluations": [
+          {
+            "entity_info_missing": false,
+            "entity_info_correct": true,
+            "examples_for_wrong_or_correct": "Correct: Transaction type matches exactly"
+          }
+        ]
+      },
+      {
+        "field_name_ground_truth": "currency",
+        "field_name_test": "currency",
+        "ground_truth_entity_core_value": "USD",
+        "test_entity_core_value": "USD",
+        "evaluations": [
+          {
+            "entity_info_missing": false,
+            "entity_info_correct": true,
+            "examples_for_wrong_or_correct": "Correct: Currency code matches"
+          }
+        ]
+      },
+      {
+        "field_name_ground_truth": "recipient_details",
+        "field_name_test": "recipient_details",
+        "ground_truth_entity_core_value": "ACME Corp, SWIFT: ABCDUS33",
+        "test_entity_core_value": "ACME Corp",
+        "evaluations": [
+          {
+            "entity_info_missing": true,
+            "entity_info_correct": false,
+            "examples_for_wrong_or_correct": "Wrong: Missing SWIFT code information"
+          }
+        ]
+      }
+    ],
+    "validation_tried": true
+  }
+}

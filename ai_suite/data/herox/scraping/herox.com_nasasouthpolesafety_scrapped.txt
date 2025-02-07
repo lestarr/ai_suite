@@ -1,0 +1,453 @@
+South Pole Safety: Designing the NASA Lunar Rescue System | HeroX
+===============
+
+[![Image 1: Home](https://d253pvgap36xx8.cloudfront.net/static/images/herox-logo.svg)](https://www.herox.com/)
+
+[challenges](https://www.herox.com/crowdsourcing-projects) [For Business](https://www.herox.com/how-it-works) [Who We Are](https://www.herox.com/about) [Results](https://www.herox.com/results)
+
+search
+
+Get Started
+
+   [I want to launch a challenge](https://www.herox.com/i-want-to-launch-challenge) Connect to talented problem solvers
+   [I want to solve a challenge](https://www.herox.com/sign-up?next=/crowdsourcing-projects) Join our community to win prizes
+
+[log in](https://www.herox.com/sign-in?next=/NASASouthPoleSafety)
+
+menu
+
+[log in](https://www.herox.com/sign-in?next=/NASASouthPoleSafety)
+
+[challenges](https://www.herox.com/crowdsourcing-projects) [For Business](https://www.herox.com/how-it-works) [Who We Are](https://www.herox.com/about) [Results](https://www.herox.com/results)
+
+[![Image 2: Challenge creator logo](https://d253pvgap36xx8.cloudfront.net/groups/logothumbnail/8ff6a6301eb911e7a4680242ac110003/96def06c9bd111e6a1940242ac110002.png)](https://www.herox.com/NTL)
+
+[NASA Tournament Lab](https://www.herox.com/NTL)
+------------------------------------------------
+
+ 81,252 share follow (2.1K) following unfollow (2.1K)
+
+![Image 3](https://d253pvgap36xx8.cloudfront.net/static/images/powered-by-text.svg)
+
+![Image 4](https://d253pvgap36xx8.cloudfront.net/static/images/logo-white.svg)
+
+  ![Image 5](https://d253pvgap36xx8.cloudfront.net/challenges/imagedetail/edf79928a1ed11efb9f4a62104078d60/ed8e56a2a1ed11ef90dd7e762cd0f25a.jpeg)
+
+South Pole Safety: Designing the NASA Lunar Rescue System
+=========================================================
+
+Create a compact, efficient system for astronaut rescue on the lunar surface - helping ensure swift, safe evacuation in extreme conditions.
+
+solve this challenge
+
+[Engineering](https://www.herox.com/crowdsourcing-projects/engineering) [Government](https://www.herox.com/crowdsourcing-projects/government) [Space](https://www.herox.com/crowdsourcing-projects/space) [Powered By HeroX](https://www.herox.com/crowdsourcing-projects/poweredbyherox)
+
+stage:
+
+Q&A Webinar
+
+prize:
+
+$45,000
+
+solve this challenge
+
+[Engineering](https://www.herox.com/crowdsourcing-projects/engineering) [Government](https://www.herox.com/crowdsourcing-projects/government) [Space](https://www.herox.com/crowdsourcing-projects/space) [Powered By HeroX](https://www.herox.com/crowdsourcing-projects/poweredbyherox)
+
+[more](https://www.herox.com/NASASouthPoleSafety#)
+
+Summary
+
+Timeline
+
+Updates12
+
+Forum46
+
+Teams2.1K
+
+Press
+
+Resources
+
+FAQ
+
+Summary
+
+[Overview](https://www.herox.com/NASASouthPoleSafety#block-7947) [Guidelines](https://www.herox.com/NASASouthPoleSafety#block-7948)
+
+Overview
+
+In the unforgiving lunar environment, the possibility of an astronaut crewmember becoming incapacitated due to unforeseen circumstances (injury, medical emergency, or a mission-related accident) is a critical concern, starting with the upcoming Artemis III mission, where two astronaut crewmembers will explore the Lunar South Pole. The Moon's surface is littered with rocks ranging from 0.15 to 20 meters in diameter and craters spanning 1 to 30 meters wide, making navigation challenging even under optimal conditions. The low gravity, unique lighting conditions, extreme temperatures, and availability of only one person to perform the rescue, further complicate any rescue efforts.
+
+Among the critical concerns is the safety of astronauts during Extravehicular Activities (EVAs). If an astronaut crewmember becomes incapacitated during a mission, the ability to return them safely and promptly to the human landing system is essential. A single crew member should be able to transport an incapacitated crew member distances up to 2 km and a slope of up to 20 degrees on the lunar terrain without the assistance of a lunar rover.
+
+This pressing issue opens the door for innovative solutions. We are looking for a cutting-edge design that is low in mass and easy to deploy, enabling one astronaut crewmember to safely transport their suited (343 kg (~755lb)) and fully incapacitated partner back to the human landing system. The solution must perform effectively in the Moon’s extreme South Pole environment and operate independently of a lunar rover.
+
+Your creativity and expertise could bridge this critical gap, enhancing the safety measures for future lunar explorers. By addressing this challenge, you have the opportunity to contribute to the next “giant leap” in human space exploration.
+
+Guidelines
+
+Background
+
+NASA’s Artemis campaign marks a new chapter in lunar exploration, aiming to land the first woman, first person of color, and first international partner crewmember at the Lunar South Pole. Artemis III, scheduled for no earlier than 2026, is the first crewed surface mission under this campaign. The objectives of Artemis III are to conduct experiments and collect samples to advance our understanding of lunar geology and resources, test new technologies and systems that will enable a long-term human presence on the Moon and gather data to support subsequent missions.
+
+This ambitious endeavor presents significant challenges. Unlike future missions that will be equipped with a Lunar Terrain Vehicle (scheduled for delivery no earlier than Artemis V) and Pressurized Rover (scheduled for delivery no earlier than Artemis VII), the Artemis III and IV crews will not have access to a rover. This limitation necessitates that all equipment and safety protocols be carried and managed by the crewmembers themselves, emphasizing the need for solutions with minimal mass and volume impact.
+
+The Spacesuit
+
+For the Artemis III mission, crewmembers will be equipped with the next-generation Axiom Extravehicular Mobility Unit (AxEMU) spacesuit, developed by Axiom Space. This advanced suit represents a significant leap forward in spacesuit technology, designed to support the demanding objectives of lunar exploration at the Moon’s South Pole.
+
+The AxEMU serves as a personal spacecraft for each EVA crewmember, providing a flexible, adjustable fit and life-sustaining environment amidst the vacuum of space and the Moon’s harsh conditions. The suit’s life support system is engineered for extended missions, featuring regenerable carbon dioxide scrubbing and robust thermal regulation. This system enables crewmembers to conduct spacewalks for durations of 4-8 hours. The Artemis missions currently expect 2-5 EVAs of this duration, each.  The AxEMU suit is outfitted with four attachment points located on the front waist area and top of the Spacesuit. (See Axiom Suit Images in the [Resources tab](https://www.herox.com/NASASouthPoleSafety/resource/2106) for additional details)
+
+The Lunar Environment
+
+The Lunar South Pole presents an environment of stark extremes and formidable challenges, shaping every aspect of the Artemis missions. Understanding this environment is crucial for ensuring the safety of the crewmembers and the success of their objectives. Temperature extremes are among the most significant challenges. Due to the Moon’s lack of atmosphere and minimal axial tilt, temperatures can vary dramatically. Sunlit areas can reach scorching highs of approximately 130°F (54°C), while areas in permanent shadow can plunge to frigid lows of about \-334°F (-203°C). Equipment and suits must be able to operate effectively across this vast temperature range, and thermal regulation for crewmembers is a constant challenge.
+
+Lighting conditions at the South Pole are uniquely challenging. The Sun hovers near the horizon, creating long shadows that obscure surface features and make terrain navigation difficult. Some regions are in near-permanent darkness, while others experience extended periods of daylight. The low-angle lighting can impair depth perception, increasing the risk of tripping or stumbling over unseen obstacles.
+
+The terrain itself is rugged and uneven, characterized by a multitude of geological features, including:
+
+   Rocks (Blocks): The surface is strewn with rocks ranging from approximately 0.15 meters to 20 meters in diameter, with a height-to-diameter ratio of 0.5. These blocks can impede movement and create hazardous conditions for traversal.
+   Craters: Craters vary in size from 1 meter to 30 meters in diameter, with a depth-to-diameter ratio of 0.12. Navigating around or across these craters requires careful planning and significant physical effort.
+   Slopes: up to 20 degrees (up, down, or cross slopes)
+
+(See Design Specification for Natural Environments (DSNE) in the [Resources tab](https://www.herox.com/NASASouthPoleSafety/resource/2105) for additional details)
+
+Lunar gravity: Approximately one-sixth that of Earth’s, the Moon’s gravitational pull affects how crewmembers move and handle objects. While the reduced gravity allows for lifting heavier loads than on Earth, it also means that inertia is a concern; once an object is in motion, it is harder to stop, impacting both walking and the manipulation of tools and equipment. Regolith, or lunar dust, is composed of fine, sharp particles that can cling to surfaces due to electrostatic charging. It can interfere with equipment functionality, degrade seals and joints, and pose safety and health risks (if ingested or inhaled) – though spacesuits are designed to minimize exposure. The Moon’s lack of an atmosphere exposes the surface to solar radiation and the threat of micrometeoroid impacts.
+
+These environmental factors necessitate strong consideration for equipment materials, crewmember transport and use, deployment and operational procedures, and system durability.
+
+Lunar Surface Extravehicular Activities (EVAs)
+
+EVAs are pivotal for scientific discovery, technological advancement, and paving the way for sustained human presence on the Moon. Lunar spacewalks will enable the crew to explore the Lunar South Pole, a region of immense scientific interest due to its unique environmental conditions and the potential presence of water ice in permanently shadowed regions.
+
+The mission will involve a multi-day journey to lunar orbit, followed by a descent to the Moon’s surface near the South Pole – a region unexplored by humans to date. During their mission, crewmembers will conduct EVAs, venturing up to 2 kilometers away from their landing site to explore and conduct scientific research.
+
+“Consumables” in the context of a lunar EVA refer to the limited life support resources  crewmember carries in their spacesuit. These resources include oxygen for breathing, water for cooling, and power for the suit’s systems, such as communication and life support. Consumables are essential to maintaining the crewmember’s ability to survive and function throughout the entire lunar EVA. The amount of consumables carried is designed to support the crewmember for a specific duration, with a contingency reserve for emergencies.
+
+During early Artemis missions, there will only be two crewmembers on the surface of the Moon. Safety protocols dictate that all EVAs be performed with two crewmembers, working closely together. This requirement ensures mutual support and increases safety in the challenging lunar environment. However, it also presents a critical challenge: in the event that one crewmember becomes incapacitated due to injury, medical emergency, or equipment malfunction, the other must be prepared to assist and, if necessary, transport their partner back to the human landing system.
+
+The Problem
+
+The Lunar South Pole poses formidable challenges: treacherous terrain strewn with rocks and craters, extreme temperature fluctuations, unique lighting conditions, and the reduced gravity of the Moon. In this harsh environment, the possibility of a crewmember becoming incapacitated due to injury, health issues, or equipment failure is a serious concern.
+
+Artemis explorers would benefit from a lightweight, easily deployable solution that allows a single crewmember to transport a 343 kg (~755lb)  fully incapacitated crewmember over distances of up to 2 kilometers (and lunar terrain slopes up to 20 degrees) without the assistance of a lunar rover.
+
+We are seeking innovative solutions to this challenge. By developing a design that is low in mass, easily transportable by the crewmember throughout the duration of the nominal EVA, easy to deploy, and capable of functioning effectively under the extreme conditions of the Lunar South Pole, you can play a vital role in enhancing the safety measures for our future lunar explorers.
+
+The Challenge
+
+Are you ready to make a tangible impact on the future of space exploration and claim your share of the $45,000 prize purse? This is your opportunity to contribute to crewmember safety on early lunar missions. We invite you to design an innovative solution that enables a single crewmember to safely transport a fully incapacitated crewmember back to the human landing system from up to 2 kilometers away during a lunar EVA, without relying on a lunar rover. Your concept should be low in mass, easy to deploy, transportable by the crewmember throughout the duration of the EVA, and capable of operating under the extreme conditions of the Lunar South Pole.
+
+We are seeking comprehensive technical design concepts that showcase your ingenuity and problem-solving skills. Your proposal should detail how your solution works, explaining the mechanics that enable one crewmember to transport another safely across the challenging lunar terrain. It should address the specific requirements of the mission, and address all challenge judging criteria. Your design should demonstrate how it overcomes environmental hurdles, functioning effectively in low gravity, unique lighting conditions, extreme temperatures, and in the presence of abrasive lunar dust. Visual illustrations, such as diagrams, sketches, are required while preliminary CAD models are highly encouraged, to bring your idea to life and help us understand its practicality and feasibility. AI-generated images shall not be submitted.
+
+In your proposal, provide key technical specifications and details that effectively communicate your design. Offer realistic estimates of your solution's total mass and volume, aiming for less than 23 kilograms (~50 pounds), and minimal volume, to ensure practicality for lunar transport and use. Specify the materials you plan to use, ensuring they are suitable for the harsh lunar environment and capable of withstanding extreme temperatures, vacuum conditions, and Regolith.
+
+Explain how your solution can be quickly and easily deployed by a single crewmember. Detail how your design can be transported, and functions once deployed, discussing aspects like stability, control, speed of movement, and how it navigates the challenging lunar terrain. Safety is paramount; describe how your design ensures the safety of both the incapacitated crewmember and the rescuer, outlining any risk mitigation strategies and highlighting how your solution avoids introducing new hazards to either crewmember. Emphasize the practicality of your design in an emergency scenario, ensuring it can be deployed rapidly and effectively when needed most.
+
+Performance Criteria
+
+The following factors should be considered in the design of your solution:
+
+Must-Have Requirements
+
+To be considered for the prize, your design must meet these essential requirements:
+ Low Mass and Minimal Volume: Aim for  total mass no greater than  23 kilograms (~50 pounds). The lighter the design solution, the better. Design should also minimize stowed volume for ease of transport.
+ Effectiveness in Safe Transportation: enable a single crewmember to transport an incapacitated crewmember over a distance of up to 2 kilometers on up to  20 degrees lunar terrain slope. Facilitate a prompt return to the entry point of the lunar lander, considering limited EVA consumables (oxygen, battery life).
+ Ease of Deployment and Use: Deployable and operable by one crewmember wearing the AxEMU spacesuit. Can be deployed rapidly in an emergency situation with limited dexterity.
+ Compatibility with Lunar Environment: Use materials that can withstand extreme temperatures, lunar dust, and vacuum conditions. Capable of functioning through rugged terrain (up to 20 deg up/down/cross lunar terrain slope), including rocks and craters as specified in the lunar terrain data.
+ Safety and Reliability: Does not introduce additional risks during deployment or operation. Functions consistently without failure or hazards under expected lunar conditions.
+ Minimal Impact on Suit Design: Should require minimal to no modifications to the AxEMU spacesuit. Use of the attachment points on the Spacesuit is acceptable.
+
+Nice-to-Have Features
+
+While not mandatory, the following features will enhance your submission:
+ Collapsibility and Storage Efficiency: The solution can be collapsed or folded for efficient storage during transport to the Moon.
+ Adaptability: Can accommodate various incapacitation scenarios and adjust to different mission requirements.
+ Anthropometric Accommodation: Accommodates crewmembers across a broad range of body sizes and shapes (1st to 99th percentile).
+ Ease of Manufacturing: Utilizes materials and manufacturing processes that are practical and cost-effective with current technology.
+ Multi-functionality: The design serves other purposes beyond casualty evacuation, adding value to the mission.
+
+Out of Scope for This Challenge
+
+Please note that the following aspects are out of scope and should not be included in your submission:
+
+   Medical Treatment: Providing medical attention or life support to the incapacitated crew member beyond safe transportation.
+   Suit Modifications: Any design requiring significant changes to the existing AxEMU spacesuit.
+   Lunar Rover Use: Solutions that rely on the use of rovers 
+   Complex Integrations: Designs that require significant integration with other systems or have substantial impacts on mission mass, volume, or power resources beyond acceptable limits.
+
+We are seeking solutions that push the boundaries of current technology and thinking. Highlight what makes your concept unique and how it represents a novel approach to this critical challenge. By contributing your expertise and creativity, you have the chance to play a vital role in enhancing crewmember safety during lunar missions, be part of a historic endeavor as humanity returns to the Moon, gain recognition from NASA and the global space exploration community, and win a portion of the $45,000 prize purse. Click Solve This Challenge to begin now!
+
+Prize
+
+$45,000 purse distributed through five prizes:
+
+   One first place winner will receive $20,000 
+   One second place winner will receive $10,000 
+   Up to 3 third place winners will each receive $5000 
+
+Timeline
+
+<table><colgroup><col style="width:50%;"><col style="width:50%;"></colgroup><tbody><tr><td style="border:1pt solid #000000;padding:5pt;vertical-align:top;">Open to submissions</td><td style="border:1pt solid #000000;padding:5pt;vertical-align:top;">November 14, 2024,&#160; 9AM ET</td></tr><tr><td style="border:1pt solid #000000;padding:5pt;vertical-align:top;">Submission deadline</td><td style="border:1pt solid #000000;padding:5pt;vertical-align:top;">February 6th, 2025, 5PM ET</td></tr><tr><td style="border:1pt solid #000000;padding:5pt;vertical-align:top;">Judging</td><td style="border:1pt solid #000000;padding:5pt;vertical-align:top;">February 7th - March 13, 2025</td></tr><tr><td style="border:1pt solid #000000;padding:5pt;vertical-align:top;">Winners Announced</td><td style="border:1pt solid #000000;padding:5pt;vertical-align:top;">March 27, 2025</td></tr></tbody></table>
+
+How do I win?
+
+To be eligible for an award, your proposal must, at minimum:
+
+   Satisfy the Judging Scorecard requirements
+   Thoughtfully address the Submission Form questions
+   Be scored higher than your competitors!
+
+Judging Criteria
+
+| Criterion
+ | Sub-criterion
+
+ | Description
+
+ | Weight
+
+ |
+| --- | --- | --- | --- |
+| Innovation (20%)
+
+ | N/A | How innovative and original is the proposed solution in addressing the challenge? How innovative is the approach to solving the problem? | 20%
+
+ |
+| Essential Performance Criteria (55%)
+
+ | Mass/Volume | How well does the solution minimize mass while maintaining functional requirements and needs? How well does the solution minimize volume for ease of transport? | 17%
+
+ |
+| Safe Transportation | How effectively does the solution enable safe and timely transportation of an incapacitated crewmember on the lunar surface? | 12%
+
+ |
+| Ease of Deployment/Use | How easily can the solution be deployed and operated in an emergency by a single crewmember wearing the AxEMU suit? | 7%
+
+ |
+| Compatibility with Lunar Environment | How well does the solution withstand the lunar environment’s harsh conditions? | 7%
+
+ |
+| Safety/Reliability | How well does the solution ensure safety during deployment and operation? How reliable is the solution in operating consistently under lunar conditions? | 7%
+
+ |
+| Impact on Suit Design | Does the solution avoid necessitating changes to the spacesuit design? | 5%
+
+ |
+| Additional Considerations (25%)
+
+ | Collapsibility/Storage Efficiency | How well can the solution be collapsed or folded for storage during lunar transport? | 7%
+
+ |
+| Adaptability | How adaptable is the solution for various incapacitation scenarios and mission requirements? | 6%
+
+ |
+| Anthropometric Accommodation | How well does the solution accommodate a wide range of crewmember body sizes and shapes? | 5%
+
+ |
+| Ease of Manufacturing | How practical and cost-effective is the solution for manufacturing with current technology? | 4%
+
+ |
+| Multi-functionality | How versatile is the solution for purposes beyond casualty evacuation? | 3%
+
+ |
+
+Rules
+
+Participation Eligibility:
+
+The Prize is open to anyone age 18 or older participating as an individual or as a team. Individual competitors and teams may originate from any country, as long as United States federal sanctions do not prohibit participation (see: [https://www.treasury.gov/resource-center/sanctions/Programs/Pages/Programs.aspx](https://www.treasury.gov/resource-center/sanctions/Programs/Pages/Programs.aspx)). If you are a NASA employee, a Government contractor, or employed by a Government Contractor, your participation in this challenge may be restricted.
+
+Submissions must originate from either the U.S. or a designated country (see definition of designated country at [https://www.acquisition.gov/far/part-25#FAR\25\003](https://www.acquisition.gov/far/part-25#FAR25003), OR have been substantially transformed in the US or designated country prior to prototype delivery pursuant to FAR 25.403(c).
+
+Submissions must be made in English. All challenge-related communication will be in English.
+
+You are required to ensure that all releases or transfers of technical data to non-US persons comply with International Traffic in Arms Regulation (ITAR), 22 C.F.R. §§ 120.1 to 130.17.
+
+NASA encourages outside individuals and non-expert teams to compete and propose new solutions.
+
+To be eligible to compete, you must comply with all the terms of the challenge as defined in the [Challenge-Specific Agreement](https://www.herox.com/NASASouthPoleSafety/legal-agreement-view).
+
+Intellectual Property
+
+Innovators who are awarded a prize for their submission must agree to grant the United States Government  a royalty-free, non-exclusive, irrevocable, worldwide license in all Intellectual Property demonstrated by the winning/awarded submissions. See the Challenge-Specific Agreement for complete details.
+
+You may be required to complete an additional form to document this license if you are selected as a winner.
+
+Awarding of the Prize:
+
+The Individual Submitter or Team Captain is automatically designated as the Recipient of the prize monies. The Individual’s or Captain’s name must also match the Authorized Person on the receiving Bank Account. No changes are permitted to the prize Recipient after the Submission Deadline date. If you wish to change who would receive the prize monies, those changes must be completed prior to the Submission Deadline. View our Knowledge Base article [here](https://www.herox.com/help/93-guide-changing-team-captain) for how to change Team Captains.
+
+Additional Information
+
+   By participating in the challenge, each competitor agrees to adhere to the [HeroX Intellectual Integrity Policy](https://www.herox.com/intellectual-integrity-policy) and promises to submit only their original idea. Any indication of "copying" amongst competitors is grounds for disqualification.
+   All applications will go through a process of due diligence; any application found to be misrepresentative, plagiarized, or sharing an idea that is not their own will be automatically disqualified.
+   All ineligible applicants will be automatically removed from the competition with no recourse or reimbursement.
+   No purchase or payment of any kind is necessary to enter or win the competition.
+   Void wherever restricted or prohibited by law. 
+
+solve this challenge
+
+[View legal agreement](https://www.herox.com/NASASouthPoleSafety/legal-agreement-view)
+
+Timeline
+
+Updates12
+
+Challenge Updates
+-----------------
+
+[REMINDER: The South Pole Safety: Designing the NASA Lunar Rescue System Challenge Q&A Webinar starts in two hours!](https://www.herox.com/NASASouthPoleSafety/update/7378)
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Jan. 23, 2025, 9 a.m. PST by [Lulu](https://www.herox.com/crowdsourcing-community/lulu-3043)
+
+The South Pole Safety: Designing the NASA Lunar Rescue System Challenge Q&A Webinar starts in two hours!
+
+[![Image 6](https://lh6.googleusercontent.com/a4E3M29idQIlOT8BL3LlS6XPD0TChyxIFYoy97hjIDdhnCgu8PZpzevs0P5rq6BPLkukhJnGyzCXgrMn5ZHuzg-5U3dZJm4jBEVA-rA3sou1Be57t1eu0dVJZ9C5kNXFDyeWuE4qRd61Vop3SaAs9P1Ljt015jQHYjJZQpSFP5hgYY12KmOwj)](https://herox.zoom.us/webinar/register/3117327353638/WNxneOkW9aTvOhHXqoSlmNMA)
+
+When: Today, Jan 23 at 11:00 AM PT / 2:00 PM ET.
+
+What: Join HeroX and NASA for an introduction to the South Pole Safety: Designing the NASA Lunar Rescue System Challenge and a live Q&A!​
+
+[1 comment](https://www.herox.com/NASASouthPoleSafety/update/7378#comments)
+
+[Two Week Warning](https://www.herox.com/NASASouthPoleSafety/update/7336)
+-------------------------------------------------------------------------
+
+Jan. 23, 2025, 6 a.m. PST by [Lulu](https://www.herox.com/crowdsourcing-community/lulu-3043)
+
+This is your official reminder that you have two weeks left to submit your South Pole Safety: Designing the NASA Lunar Rescue System solution!
+
+Please remember that we don’t accept any late submissions. It’s a good idea to get 75% of your project done a full week before it’s due to allow time for troubleshooting.
+
+Now is also the time to ask questions and seek help. To ask a question, post on the discussion forum or comment directly on this post. We’re looking forward to hearing from you!
+
+Best of luck in the final stages of your project.
+
+[13 comments](https://www.herox.com/NASASouthPoleSafety/update/7336#comments)
+
+[One Week until the Webinar! Register now!](https://www.herox.com/NASASouthPoleSafety/update/7468)
+--------------------------------------------------------------------------------------------------
+
+Jan. 16, 2025, 6 a.m. PST by [Lulu](https://www.herox.com/crowdsourcing-community/lulu-3043)
+
+Hello Solvers!
+
+Please [Register Here](https://herox.zoom.us/webinar/register/3117327353638/WNxneOkW9aTvOhHXqoSlmNMA) for the Q&A Webinar for the South Pole Safety: Designing the NASA Lunar Rescue System Challenge, hosted on Jan 23 at 11:00 AM Pacific Time / 2:00 PM Eastern Time..  This webinar is designed for you all to get answers to any questions you have before the submission deadline of February 6, 2025.
+
+We encourage you to share your questions in advance when you register, see you there!
+
+[2 comments](https://www.herox.com/NASASouthPoleSafety/update/7468#comments)
+
+[Curious about the South Pole Safety: Designing the NASA Lunar Rescue System Challenge? Join the live Q&A in Two Weeks!](https://www.herox.com/NASASouthPoleSafety/update/7467)
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Jan. 9, 2025, 8 a.m. PST by [Lulu](https://www.herox.com/crowdsourcing-community/lulu-3043)
+
+You won't want to miss this! Join the South Pole Safety: Designing the NASA Lunar Rescue System Challenge webinar on Jan 23rd at 11:00 AM Pacific Time / 2:00 PM Eastern Time.
+
+You will learn exactly why NASA launched the South Pole Safety: Designing the NASA Lunar Rescue System Challenge, how you can participate, and what you can win. PLUS you will also have the opportunity to ask the Challenge Sponsor your questions during our live Q&A session.
+
+We encourage you to share your questions in advance when you register, see you there!
+
+Click the button below to register.
+
+[![Image 7](https://lh6.googleusercontent.com/a4E3M29idQIlOT8BL3LlS6XPD0TChyxIFYoy97hjIDdhnCgu8PZpzevs0P5rq6BPLkukhJnGyzCXgrMn5ZHuzg-5U3dZJm4jBEVA-rA3sou1Be57t1eu0dVJZ9C5kNXFDyeWuE4qRd61Vop3SaAs9P1Ljt015jQHYjJZQpSFP5hgYY12KmOwj)](https://herox.zoom.us/webinar/register/3117327353638/WNxneOkW9aTvOhHXqoSlmNMA)
+
+[2 comments](https://www.herox.com/NASASouthPoleSafety/update/7467#comments)
+
+[Q&A Webinar & Challenge Timeline Updates](https://www.herox.com/NASASouthPoleSafety/update/7466)
+-------------------------------------------------------------------------------------------------
+
+Jan. 8, 2025, 6 a.m. PST by [Andrew @ HeroX](https://www.herox.com/crowdsourcing-community/andrewherox-225302)
+
+Hello Solvers,
+
+Please note that the Q&A Webinar for NASA’s South Pole Safety Challenge is currently scheduled for Thursday, January 9th, 2025. As this date has recently been designated as a day of Mourning for President Carter, and a US federal holiday, the webinar will be postponed by 2 weeks to January 23rd, 2025 at 2pm ET/ 11am PT. This will also move out the challenge timeline adjusting both the Submission Deadline and Winner’s Announcement accordingly to allow solvers more time to work on their submissions following the Q&A Webinar.  For the updated challenge timeline dates please see the Challenge Timeline [HERE](https://www.herox.com/NASASouthPoleSafety/timeline).
+
+Regards,
+
+HeroX
+
+[](https://www.herox.com/NASASouthPoleSafety/update/7466#comments)
+
+Load more
+
+Forum46
+
+Teams2.1K
+
+Press
+
+Resources
+
+FAQ
+
+Other Challenges You May Be Interested In
+-----------------------------------------
+
+    [![Image 8](https://d253pvgap36xx8.cloudfront.net/static/images/powered-by-text.svg) ![Image 9](https://d253pvgap36xx8.cloudfront.net/static/images/logo-white.svg) ![Image 10](https://d253pvgap36xx8.cloudfront.net/challenges/thumbnail/c8237fb6b93e11eeba2e6a0ac9dba3a7/c7ec4e7eb93e11ee90393ee01bb9ba13.jpeg) ![Image 11](https://d253pvgap36xx8.cloudfront.net/avatars/dbc96ed801cb11efa4f6865c05da017f/dbad531a01cb11efa4f6865c05da017f.png) by ENMICE | Servicios de Exploración Espacial 621 ENMICE El encuentro y competencia líder de Cohetería Experimental en México. Enter](https://www.herox.com/ENMICE2022?from=recommended-challenge)
+
+ [![Image 12](https://d253pvgap36xx8.cloudfront.net/challenges/videothumbnail/4886ba40243011efb78e8a9e0b81bc75.jpeg) ![Image 13](https://d253pvgap36xx8.cloudfront.net/avatars/f2a81580bbaa11eebb135a381d1e73fd/f28a692cbbaa11eebb135a381d1e73fd.png) by GoAERO Prize 1.4K GoAERO Prize Design and build a safe, portable, robust, autonomy-enabled Emergency Response Flyer. Enter $2M Prize](https://www.herox.com/goaero?from=recommended-challenge)
+
+    [![Image 14](https://d253pvgap36xx8.cloudfront.net/challenges/thumbnail/e9e80bcacc6c11efa376e6c6390cfdcf/e98ae6cacc6c11ef8e91be37f5985b90.jpeg) ![Image 15](https://d253pvgap36xx8.cloudfront.net/groups/logothumbnail/cbfdbe6abc3011ec918cfef0200019cc/ca9dca9cbc3011ec9a05d660b39e5251.png) by American-Made Challenges 164 Community Energy Innovation Prize Round 2 Provide support, build trust, and strengthen partnerships with communities historically underrepresented in clean energy development. Enter \- 145 Days Remaining $8.4M Prize](https://www.herox.com/CommunityEnergyInnovation-Round2?from=recommended-challenge)
+
+![Image 16: Home](https://d253pvgap36xx8.cloudfront.net/static/images/logo-white.svg)
+
+![Image 17: Home](https://d253pvgap36xx8.cloudfront.net/static/images/logo-white.svg)
+
+Be the first to know
+
+when new crowdsourcing projects are posted
+
+ subscribe
+
+about herox
+
+   [about us](https://www.herox.com/about)
+   [press kit](https://www.herox.com/press-kit)
+   [partner with us](https://www.herox.com/partnerships)
+   [partners](https://www.herox.com/partners)
+   [careers](https://www.herox.com/work-with-us)
+   [privacy](https://www.herox.com/privacy-policy)
+   [terms](https://www.herox.com/terms-of-use)
+   [cookie policy](https://www.herox.com/cookie-policy)
+
+community
+
+   [blog](https://www.herox.com/blog)
+   [organizations involved](https://www.herox.com/crowdsourcing-projects/crowdsourcing-companies)
+   [events & webinars](https://www.herox.com/events)
+   [community](https://www.herox.com/crowdsourcing-community)
+   [general forums](https://www.herox.com/forum)
+
+support
+
+   [contact us](https://www.herox.com/i-want-to-launch-challenge)
+   [how HeroX works](https://www.herox.com/how-it-works)
+   [knowledge base](https://www.herox.com/help)
+   [FAQ](https://www.herox.com/faq)
+   [innovation resources](https://www.herox.com/innovation-resources)
+
+Be the first to know
+
+when new crowdsourcing projects are posted
+
+ subscribe
+
+[](https://www.instagram.com/beherox/ "HeroX on Instagram")[](https://www.facebook.com/IamHeroX "HeroX on Facebook")[](https://twitter.com/iamherox "HeroX on Twitter")[](https://linkedin.com/company/herox "HeroX on LinkedIn")[](https://www.youtube.com/channel/UCzvAiGkFmx1JqomRoM71buw "HeroX on Youtube")
+
+© Copyright HeroX 2025
+
+Was this page helpful? yes no
+
+Please tell us why. The suspense is killin' us!
+
+submit
+
+Thank You!
+
+Your feedback is always welcome!

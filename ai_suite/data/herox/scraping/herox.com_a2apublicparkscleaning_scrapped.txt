@@ -1,0 +1,539 @@
+Teams | High-Tech Autonomous Bin Emptying System | HeroX
+===============
+
+[![Image 1: Home](https://d253pvgap36xx8.cloudfront.net/static/images/herox-logo.svg)](https://www.herox.com/)
+
+[challenges](https://www.herox.com/crowdsourcing-projects) [For Business](https://www.herox.com/how-it-works) [Who We Are](https://www.herox.com/about) [Results](https://www.herox.com/results)
+
+search
+
+Get Started
+
+   [I want to launch a challenge](https://www.herox.com/i-want-to-launch-challenge) Connect to talented problem solvers
+   [I want to solve a challenge](https://www.herox.com/sign-up?next=/crowdsourcing-projects) Join our community to win prizes
+
+[log in](https://www.herox.com/sign-in?next=/A2APublicParksCleaning/teams)
+
+menu
+
+[log in](https://www.herox.com/sign-in?next=/A2APublicParksCleaning/teams)
+
+[challenges](https://www.herox.com/crowdsourcing-projects) [For Business](https://www.herox.com/how-it-works) [Who We Are](https://www.herox.com/about) [Results](https://www.herox.com/results)
+
+[![Image 2: Challenge creator logo](https://d253pvgap36xx8.cloudfront.net/groups/logothumbnail/b11a719e047c11edb795fef99fbf8933/b860f258047b11edaef0eaa6ea6488d1.png)](https://www.herox.com/A2A)
+
+[A2A](https://www.herox.com/A2A)
+--------------------------------
+
+ 15,230 share follow (161) following unfollow (161)
+
+![Image 3](https://d253pvgap36xx8.cloudfront.net/static/images/powered-by-text.svg)
+
+![Image 4](https://d253pvgap36xx8.cloudfront.net/static/images/logo-white.svg)
+
+  ![Image 5](https://d253pvgap36xx8.cloudfront.net/challenges/imagedetail/22524ab2694311ef8fee5eca2a55dfbb/21d0e940694311efa92e9ebb4cc9fc89.jpeg)
+
+High-Tech Autonomous Bin Emptying System
+========================================
+
+Ensuring clean parks in Milan means managing +100 bins per day. How can a high-tech system help operators in the care of green areas?
+
+[View Open Challenges](https://www.herox.com/crowdsourcing-projects/enter)
+
+This challenge is closed
+
+[Energy, Environment & Resources](https://www.herox.com/crowdsourcing-projects/energy-environment-resources) [Engineering](https://www.herox.com/crowdsourcing-projects/engineering) [Technology](https://www.herox.com/crowdsourcing-projects/technology) [Powered By HeroX](https://www.herox.com/crowdsourcing-projects/poweredbyherox)
+
+stage:
+
+Won
+
+prize:
+
+$60,000
+
+[View Open Challenges](https://www.herox.com/crowdsourcing-projects/enter)
+
+This challenge is closed
+
+[Energy, Environment & Resources](https://www.herox.com/crowdsourcing-projects/energy-environment-resources) [Engineering](https://www.herox.com/crowdsourcing-projects/engineering) [Technology](https://www.herox.com/crowdsourcing-projects/technology) [Powered By HeroX](https://www.herox.com/crowdsourcing-projects/poweredbyherox)
+
+[more](https://www.herox.com/A2APublicParksCleaning#)
+
+Summary
+
+Timeline
+
+Updates7
+
+Forum11
+
+Teams161
+
+Resources
+
+FAQ
+
+Summary
+
+[Overview](https://www.herox.com/A2APublicParksCleaning#block-7907) [Guidelines - The Challenge](https://www.herox.com/A2APublicParksCleaning#block-7908) [Guidelines - The Prize : How Do I win?](https://www.herox.com/A2APublicParksCleaning#block-7916) [Guidelines - Rules and Participation Eligibility](https://www.herox.com/A2APublicParksCleaning#block-7917)
+
+Overview
+
+Challenge Overview
+
+Every day several teams of operators work inside the “large” parks of Milan area (Italy) to empty the waste bins and keep the park as clean as possible.
+
+A “Large” Park has a surface area greater than 75.000 m2 and A2A Group manage more than 2.500 bins located inside 30 main large parks.
+
+Considering the total number of large parks, the area to be covered and the number of bins, these operations require a huge manual effort to guarantee the cleaning service on a daily basis.
+
+In order to guarantee an increasingly efficient cleaning service and reduce the operation costs, the goal of “Autonomous Bin Emptying System” challenge is to find a new solution in order to significantly reduce the number of teams and vehicles currently used to empty bins every day and centralize waste collection in one place, focusing on a single dedicated area in each park and avoiding emptying each individual bin manually.
+
+The Challenge seeks a detailed document that describes the layout and detailed characteristics of the proposed automated/autonomous system layout (including both software and hardware) along with its components, sensors, accessories, and usability .
+
+The Challenge Breakthrough
+
+Automated waste management systems are transforming the way parks are maintained by significantly reducing the need for manual labor and multiple teams, which in turn cuts down operational costs. As a result, parks remain consistently clean, enhancing the visitor experience and promoting environmental sustainability. Additionally, the manpower previously dedicated to these tasks can now be upskilled, redirected towards other essential maintenance and management activities, boosting overall efficiency.
+
+The timing for adopting these innovations has never been more appropriate. Advances in automation and smart technology now make it feasible to implement systems like self-emptying bins. Moreover, there is an increasing focus on sustainable solutions and the efficient use of resources, driven by the need to address climate change and pollution. In the face of budget constraints faced by many municipalities, the reduction of labor costs and optimization of resources make automated solutions particularly attractive. These factors combined create a compelling case for the implementation of automated waste management systems right now.
+
+The Challenge seeks a detailed document that describes the layout and detailed characteristics of the proposed automated/autonomous system layout (including both software and hardware) along with its components, sensors, accessories, and usability.
+
+We welcome entrepreneurs, researchers, scientists, students, and anyone eager to contribute, to jump into this challenge and to find a solution.
+
+To register for the challenge, click the “SOLVE THIS CHALLENGE” button above. The Challenge Forum is your space to share thoughts and ideas with potential competitors or to create teams with similar visions.
+
+What You Can Do To Cause A Breakthrough
+
+   Click SOLVE THIS CHALLENGE above to sign up for the challenge
+   Read the Challenge Guidelines to learn about the requirements and rules
+   Share this challenge on social media using the icons above. Show your friends, your family, or anyone you know who has a passion for discovery.
+   Start a conversation in our Forum to join the conversation, ask questions or connect with other innovators.
+
+Guidelines - The Challenge
+
+The Problem and The Seeker
+
+The focus of A2A Group for the environment is very high and, day by day, AMSA SpA, a company of the A2A Group, is committed to guaranteeing the excellence of urban hygiene services: the waste collection model "brings at door”, in fact, has allowed Milan to reach 64% waste separation and to rank among the top in Europe among metropolises with over one million citizens, also becoming an example at an international level.
+
+To further improve this goal, collaboration is needed from all citizens who are also invited to use urban bins to throw away “small” waste.
+
+The cleaning of the parks managed by AMSA SpA (A2A Group), involves the use of various teams of operators who clean and empty the bins positioned inside them every day.
+
+This is a highly manual operation which consists, in addition to the collection of waste that may end up on the ground near the bin, also to the physical emptying of each bin with the positioning of the new garbage bag.
+
+Typically, there are numerous teams employed in all the parks managed by AMSA spa in the area and motorized vehicles are also used to collect all the full waste bags coming from urban bins.
+
+The objective of the Challenge is to design  a cost-effective system capable of emptying the bins located in the parks and therefore collecting all the waste in a single specific predetermined area within the park to significantly reduce the number of operators (and vehicles) currently employed.
+
+Why Does this Problem Exist?
+
+There may be several barriers to define this new solution idea. Probably the main difficulties are linked both to the possibility of handling/managing a bin effectively in an open environment as park and combining autonomous/automation technologies to enable movements and emptying operations.
+
+In addition, here some impactful element of the current activity useful to consider in defining the context of the actual activity:
+
+   Seasonal demand variability and team structure allocation. Generally, the cleaning teams consist of two operators and a van for waste collection, which might not be efficient for larger parks and cleaning frequencies increase during summer due to higher park usage, requiring more personnel.
+   Resource management. Different team sizes are required for summer and winter, complicating resource planning and allocation. In addition, there may be events in the parks (e.g. concerts, cultural events, ...) that require additional cleaning cycles.
+   Manual labor dependency. Emptying bins and collecting waste in a van is a simple operation but it is labor-intensive.
+   Operational Efficiency. Manual operations might lead to inconsistent cleaning standards and increased operational costs.
+
+There are already several technologies on the market capable of automating and improving urban cleaning operations, but none actually focuses on the operation of emptying a bin.
+
+For example, there are autonomous sweepers capable of cleaning streets or entire areas without the direct help of a driver or “smart” waste bins equipped with sensors capable of alerting the operator when it is necessary to empty them or, again, bins equipped with a compacting system in order to increase the quantity of waste inside but none of these solutions are able to empty the bins autonomously and reducing significantly the effort of the operators and the related usage of vehicles for waste collection in the park.
+
+Challenge Breakthrough
+
+Maintaining the cleanliness of parks across the city involves the complex logistical challenge of managing hundreds of waste receptacles on a daily basis. This task requires the coordination of dedicated teams that ensure efficient and consistent servicing. To improve bin management, leveraging advanced technology and innovative strategies could prove trasformative. The integration of smart bin systems, which can monitor waste levels and optimize collection routes, would significantly enhance operational efficiency. Additionally, implementing automated waste management solutions, such as autonomous/automatic system for emptying bins, can reduce the frequency and time range of manual collections needed, thereby freeing up resources for other critical maintenance tasks. By adopting these technologies, not only can we streamline the process but also contribute to environmental sustainability by reducing carbon emissions associated with frequent collection trips. This approach not only promises a cleaner urban environment but also a more resource-efficient method of public space management.
+
+The Context - The Parks, the operations and the bins
+
+Within the territory of the city of Milan there are 30 "large" managed parks, with surfaces ranging from a minimum of 75.000 m2 to a maximum of 595.000 m2.
+
+The teams that intervene in each park are made up of 2 operators and 1 vehicle (van for waste collection with a container of 4-5 m2) with the aim of collecting waste and subsequently taking it to designated collection centers.
+
+Each team is typically assigned to a specific "large" park and during its work shift the operators for bins:
+
+   Close the waste bag placed inside the bins lifting the top covers;
+   Place the new clean waste bag and close the top covers. Approximately it takes about 3 minutes to empty the bin and place the new bag;
+   Throws the bag containing waste onto the van and moves to the next bin while the van follows him in order to collect waste present in the park;
+   While one operator work for emptying bins, the other one help him with the same operation or drive the van or, again, clean the areas surrounding benches and bins (out of scope for this Challenge);
+   After collecting all the bags, the team drives their van so that the waste is delivered to specific collection centers/landfills (out of scope for this Challenge);
+
+The working week runs from Monday to Sunday.
+
+The frequencies with which each team intervenes in the parks depend on the size of the park and the time of year. In fact, for some parks an increase in frequencies is expected in the summer period, given the greater attendance by citizens.
+
+Typically to serve all 30 "large" parks, in the winter period are necessary from 13 to 23 teams/day; in the summer 17 to 26 teams/day.
+
+The weekly frequencies with which each specific park is cleaned range from a minimum of 4 times a week up to a maximum of 9 times a week. To these values we can add extra interventions that depend on the presence of public events which may therefore have dirtied the park more.
+
+The total bins for all 30 "large" parks are around 2,500 and range from a minimum of 10-30 for the less frequented ones ([example1](https://maps.app.goo.gl/KdPAbf8R1d92L57s6)) up to a maximum of 320-400 for those with the highest turnout ([example2](https://maps.app.goo.gl/HPsVdTGxJCoFhRp26)).
+
+All bins are positioned in areas visible and easily accessible to the public, typically at the edges of dirt, bowled or asphalted areas or roads and, furthermore, their position within each park is always the same.
+
+![Image 6: Dieci cestini intelligenti in stazione, è partita la sperimentazione con  Linea Green - Gianluca Galimberti Sindaco](https://d253pvgap36xx8.cloudfront.net/editoruploads/294584/2024/09/08/image.jpeg)
+
+The bin used have a square section with rounded edges with a floor space of 48.3 x 48.3 cm, a height of 78.3cm and an internal capacity of 100l with an average weight of 20-25kg (without waste).
+
+The waste they typically contain is indicatively:
+
+   organic waste (29%);
+    Plastic and Aluminum (19%);
+    Paper / Cardboard (19%);
+    Glass (16%);
+    Undifferentiated (12%);
+    Clothing (5%).
+
+Guidelines - The Prize : How Do I win?
+
+Prize - The Rules of the Game
+
+   The best Submission in this Prize Challenge has the opportunity to win the award of $60,000.00 if it meets all requirements, as solely determined by A2A.
+   Awards will be contingent upon the theoretical evaluation of the Submissions by A2A in accordance with the judgig criteria. 
+   For this Prize Challenge, Innovators are required to transfer all rights to the Intellectual Property (IP) in their proposed Submission, to be fully awarded.
+   If the Submission does not meet all the judging criteria but it is considered the closest to the winning solution for A2A, A2A  may be willing to reward the winner with a lower prize, always upon transfer of all IP rights, justifying the unmet judging criteria which cause the partial award
+   Alternatively, A2A may consider a partial Award in case of partial transfer of Intellectual Property (IP) rights (royalty free exclusive license only for a specific territory) for an indefinite period with the right to further development with the purposes of commercial exploitation of the idea or concept demonstrated by the Submission
+   For proposed Submissions that are already commercially-available, A2A will not require any transfer of IP rights. A2A encourages the sharing of knowledge about existing technologies, however if they are not your own A2A is willing to consider a partial award for such proposals that merit their further pursuit.
+   A2A may also issue “Honorable Mention” recognition for notable submissions that are not selected for monetary awards.
+
+How do I win?
+
+To solve this Challenge, the Solvers are asked to develop a document that describes the layout and detailed characteristics of the proposed automated/autonomous system layout (including both software and hardware) along with its components, sensors, accessories, and usability.
+
+To be eligible for an award, your proposal must, at minimum:
+
+   Satisfy the Judging Scorecard requirements
+   Thoughtfully address the Submission Form questions
+   Be scored higher than your competitors!
+
+Judging Criteria - How will I be evaluated?
+
+All successful solutions should meet the following Solution Requirements:
+
+Must have:
+
+   Being able to operate outdoors, both in summer and winter and, possibly, even in the rain and must be easy to use and/or to program. It is acceptable to design a system capable to work and collect waste over the night.
+   It must minimize exposure to risk for those who frequent the park and operate constantly throughout the week. In some cases, parks are fenced and is not accessible to the public at night but the ideal is for it to work continuously;
+   If an autonomous/automatic solution, if necessary, an operator must still be able to intervene manually in case of need or emergency situations (also remotely);
+   If the solution requires it, it must be able to move not only on asphalt but also on dirt or gravel roads. Consider that the position of the streets and that of the bins can be determined in advance and always remains the same for each park.
+   In general, must minimize the use of personnel (quantity and/or time necessary for cleaning) and motorized vehicle inside the park with high level of efficiency and efficacy. 
+
+Nice to have:
+
+   Reporting and data collection: in case it is necessary to develop a software system for the collection of data from the operation of the hardware system, the user must be able to have access to the data and be able to download them via a web interface remotely and have the possibility to create reports.The software should also provide Real-time data on park cleanliness and kind of waste collected, enabling more responsive maintenance and affordable reporting.
+   Accessibility and User-Friendliness: in case your solution involves developing an “autonomous mobile robot (AMR)”, the control system of the robot must be based on the “ROS” standard and have the possibility to schedule operations according to the user's needs with a user-friendly interface.
+   API Integration: in case it is necessary to develop a software system for the collection of data necessary for the operation of the autonomous system, provide libraries of services that can be used via API so that it is possible to integrate the system with current software used to track maintenance operations.
+   Possibility for the solution proposed to be implemented/extended out from the park environment like bins on public sidewalks and squares.
+   Anti-theft alert, reporting and reaction system is appreciated
+
+Things to avoid:
+
+   Software-only platform to optimize the routes of the operators within the parks or to optimize the frequency and rotation of the teams involved will not be considered for award in this Challenge.
+   “smart” bins ([example](https://www.re-learn.eu/)) or bins with compactor ([example](https://citysolar.fi/citysolar-smart-bin-home/citysolar-smart-bin/))
+   Autonomous sweeper ([example](https://trombia.com/products/trombia-free/))
+
+General Considerations:
+
+   The possibility of adding further functions coming from GPS, sensor, IoT devices, etc. is permitted, if necessary for the operation of the system.
+   If necessary, it is permitted to redesign completely the bins it-self starting from scratch.
+   Consider within each large park an area dedicated to the centralized collection of waste from the bins. Solvers are given the freedom to decide how to organize the waste collection area requirement.
+   The possibility of "hybrid" solutions is permitted: automatic + manual, as long as they still reduce the teams employed with the relevant motorized vehicles in the field and the time necessary for emptying.
+   The possibility of making modifications to the current vehicles used (three-wheeler or van) is possible as long as they are configured as "add-ons" that are relatively easy to install.
+   If internet connection is required, consider 5G network coverage available in every park.
+   A2A will only consider for award systems that can integrate hardware and software components, to make the most of efficiency and cost savings through automation/autonomous processes to reach the target of the Challenge.
+   Solutions with Technology Readiness Levels (TRLs) 3-9 are invited. We invite to consider more components/parts of solutions already available on the market. Otherwise, it is still possible to identify and design more experimental components and solutions.
+
+Please indicate all relevant supporting information, such as data, drawings, publications, or references that would help A2A SpA evaluate the validity of the submission.
+
+A2A may wish to partner with the Solver at the conclusion of the Challenge.Please describe your expertise and include a statement indicating your interest in this opportunity.
+
+If commercial solutions/components are used, please indicate the brand and type. If your solution suggests modifications or additions to a commercially-available technology, please bear in mind that A2A may require the original IP in order to modify, and your solution may not be eligible for a full award.
+
+If the Solver use solutions taken from or inspired by patents or based on other solutions from other Industries, please indicate the patent number or the reference.
+
+<table><colgroup><col style="width:25.36%;"><col style="width:52.46%;"><col style="width:22.18%;"></colgroup><tbody><tr><td style="border:1.0pt solid black;padding:5.0pt;vertical-align:top;width:143.25pt;" width="191"><strong>Section</strong></td><td style="border-color:black;padding:5.0pt;vertical-align:top;width:293.25pt;" width="391"><strong>Description</strong></td><td style="border-color:black;padding:5.0pt;vertical-align:top;width:90.75pt;" width="121"><strong>Overall Weight</strong></td></tr><tr><td style="border-color:black;padding:5.0pt;vertical-align:top;width:143.25pt;" width="191">Data and Integration</td><td style="padding:5.0pt;vertical-align:top;width:293.25pt;" width="391"><ul><li>Is the system able to easily provide data and automatic report on correct functioning?&#160;</li><li>From a software point of view, can the system be integrated into a data management platform?</li><li>Does the system use the most common programming languages?</li></ul></td><td style="padding:5.0pt;vertical-align:top;width:90.75pt;" width="121">15</td></tr><tr><td style="border-color:black;padding:5.0pt;vertical-align:top;width:143.25pt;" width="191">Accessibility and User-Friendliness</td><td style="padding:5.0pt;vertical-align:top;width:293.25pt;" width="391"><ul><li style="text-align:justify;">Are the interface and functions of the system designed to be used easily and by non-expert operators? Is the system flexible from a software point of view so that is able to easily optimise emptying routes of different context layout ?</li><li style="text-align:justify;">Is the system designed to operate safely without endangering people (even without internet connection)?</li><li style="text-align:justify;">Is the system designed to optimize emptying routes, reducing travel times to a minimum?</li><li style="text-align:justify;">Is the proposed solution capable of completely emptying the bins efficiently and quickly, minimizing the need for human intervention?&#160;</li><li style="text-align:justify;">Can the components of the solution be easily replaced?</li></ul></td><td style="padding:5.0pt;vertical-align:top;width:90.75pt;" width="121">20</td></tr><tr><td style="border-color:black;padding:5.0pt;vertical-align:top;width:143.25pt;" width="191">Innovation&#160;</td><td style="padding:5.0pt;vertical-align:top;width:293.25pt;" width="391"><ul><li style="text-align:justify;">Is the proposed solution based on innovative and cutting-edge technologies?</li><li style="text-align:justify;">Does it offer unique and distinctive features compared to other solutions available on the market?</li><li style="text-align:justify;">Does it have potential for future improvement and development?</li><li style="text-align:justify;">Does the solution help promote the park's image as a smart place that pays attention to sustainability?</li></ul></td><td style="padding:5.0pt;vertical-align:top;width:90.75pt;" width="121">35</td></tr><tr><td style="border-color:black;padding:5.0pt;vertical-align:top;width:143.25pt;" width="191">Cost Effectiveness</td><td style="padding:5.0pt;vertical-align:top;width:293.25pt;" width="391"><ul><li>Is the purchase and installation cost of the proposed solution reasonable and competitive compared to other similar solutions?</li><li>Are maintenance and management costs sustainable in the long term?</li><li>Does the solution offer a good return on investment compared to the benefits in terms of efficiency, cleanliness and image of the park?</li><li>Are there financing opportunities or incentives for the adoption of innovative waste management solutions?</li></ul><p>&#160;</p></td><td style="padding:5.0pt;vertical-align:top;width:90.75pt;" width="121"><p>30</p><p>&#160;</p></td></tr></tbody></table>
+
+Guidelines - Rules and Participation Eligibility
+
+Participation Eligibility:
+
+The challenge is open to all adult individuals, private teams, public teams, and collegiate teams. Teams may originate from any country. Submissions must be made in English (or in Italian). All challenge-related communication will be in English.
+
+Individual competitors and teams may originate from any country, as long as United States federal sanctions do not prohibit participation (see: [https://www.treasury.gov/resource-center/sanctions/Programs/Pages/Programs.aspx](https://www.treasury.gov/resource-center/sanctions/Programs/Pages/Programs.aspx)).
+
+No specific qualifications or expertise in the field of waste management is required. However, skills and experience in the fields of robotics, engineering, clean tech, circular economy are suggested to address the challenge. Prize organizers encourage outside individuals and non-expert teams to compete and propose new solutions.
+
+To be eligible to compete, you must comply with all the terms of the challenge as defined in the Challenge-Specific Agreement (link to it)
+
+Registration and Submissions:
+
+Submissions must be made online (only), via upload to the [HeroX.com](http://herox.com/) website, on or before 02:00 am CET on 2024-10-28. All uploads must be in PDF, Excel, Word, Ppt format. No late submissions will be accepted.
+
+This challenge allows one submission per individual/team. Should you have multiple entries to submit to this challenge, they will be considered separately. Whether or not multiple entries from the same individual or team may be chosen for a prize is up to the discretion of the Challenge Sponsor. You are not required to submit multiple entries, if that option is available.
+
+Intellectual Property Rights:
+
+As detailed in the Challenge-Specific Agreement \- Competitors, Innovators by submitting a Submission to this Challenge,  agree to the requirements described in the Challenge Guidelines that require (i) each Innovator, should the Innovator be awarded the Prize, to perpetually, irrevocably, and unconditionally assign to the Sponsor all right, title, and interest in and to the intellectual property by executing the Challenge Assignment And Transfer Agreement, attached as Exhibit A to this Agreement. (ii) each Innovator, should the Innovator be awarded the Prize, or a part of it as solely determined by A2A based on the evaluation process, as described in the different scenarios of the "Prize" section of the Challenge Guidelines, to transfer all the Intellectual Property rights related to the Submission as described in the same section.
+
+Awarding of the Prize:
+
+The Individual Submitter or Team Captain is automatically designated as the Recipient of the prize monies. The Individual’s or Captain’s name must also match the Authorized Person on the receiving Bank Account. No changes are permitted to the prize Recipient after the Submission Deadline date. If you wish to change who would receive the prize monies, those changes must be completed prior to the Submission Deadline. View our Knowledge Base article [here](https://www.herox.com/help/93-guide-changing-team-captain) for how to change Team Captains.
+
+Additional Information
+
+   By participating in the challenge, each competitor agrees to adhere to the [HeroX Intellectual Integrity Policy](https://www.herox.com/intellectual-integrity-policy) and promises to submit only their original idea. Any indication of "copying" amongst competitors is grounds for disqualification.
+   All applications will go through a process of due diligence; any application found to be misrepresentative, plagiarized, or sharing an idea that is not their own will be automatically disqualified.
+   All ineligible applicants will be automatically removed from the competition with no recourse or reimbursement.
+   No purchase or payment of any kind is necessary to enter or win the competition.
+   Void wherever restricted or prohibited by law. 
+
+follow challenge
+
+[View legal agreement](https://www.herox.com/A2APublicParksCleaning/legal-agreement-view)
+
+Timeline
+
+Updates7
+
+Challenge Updates
+-----------------
+
+[Timeline Update](https://www.herox.com/A2APublicParksCleaning/update/7328)
+---------------------------------------------------------------------------
+
+Nov. 15, 2024, 2:02 a.m. PST by [Caterina Crippa](https://www.herox.com/crowdsourcing-community/caterinacrippa-294584)
+
+Thank you all for your submissions. A2A received a large response to the challenge and is taking the time needed to judge all submissions received. We have therefore adjusted the challenge timeline to reflect the time needed to complete this. Please check the challenge timeline for more information.
+
+[1 comment](https://www.herox.com/A2APublicParksCleaning/update/7328#comments)
+
+[One Week Warning](https://www.herox.com/A2APublicParksCleaning/update/7142)
+----------------------------------------------------------------------------
+
+Oct. 20, 2024, 9 a.m. PDT by [Caterina Crippa](https://www.herox.com/crowdsourcing-community/caterinacrippa-294584)
+
+There's exactly ONE WEEK left to submit your solution to [](https://herox.com/powertheglobe/)the A2A's High-Tech Autonomous Bin Emptying System Challenge!
+
+You're so close. You can do this!
+
+Remember, the final submission deadline is October 28th at 2 am CET (Europe/ITA). No submissions received after this time will be accepted, so make sure to get yours in as soon as possible. Any last-minute questions or concerns can go right in the comments section of this update.
+
+GOOD LUCK!
+
+[1 comment](https://www.herox.com/A2APublicParksCleaning/update/7142#comments)
+
+[Two Weeks Warning](https://www.herox.com/A2APublicParksCleaning/update/7120)
+-----------------------------------------------------------------------------
+
+Oct. 13, 2024, 9 a.m. PDT by [Caterina Crippa](https://www.herox.com/crowdsourcing-community/caterinacrippa-294584)
+
+There are only TWO WEEKS left to submit your solution for the High-Tech Autonomous Bin Emptying System. The early bird definitely gets the worm - so don't put it off! Be sure to have at least 75% of your submission complete a full week before the deadline for maximum flexibility. We'd hate to think you worked hard on a submission, just to miss the deadline by a hair (that's right - no late-night, sad email exceptions - the cut-off is real, folks!)
+
+All that aside, thanks so much to all of you for your interest. Crowdsourcing is nothing without the crowd, and well, that's you. Yeah, you.
+
+We can't wait to see what the winning solution looks like.
+
+Best of luck to all!
+
+[leave a comment](https://www.herox.com/A2APublicParksCleaning/update/7120#comments)
+
+[Missed the A2A webinar? We've got you covered!](https://www.herox.com/A2APublicParksCleaning/update/7240)
+----------------------------------------------------------------------------------------------------------
+
+Oct. 8, 2024, midnight PDT by [Jamie Elliott](https://www.herox.com/crowdsourcing-community/jamieelliott-235698)
+
+Dear Innovators - If you did not get a chance to attend the Information Session on October 3rd, you can now review the recording below!  Please direct all questions to the challenge [forum](https://www.herox.com/A2APublicParksCleaning/forum) for answers by the A2A sponsors. The slides are available in the Resources tab, [here](https://www.herox.com/A2APublicParksCleaning/resource/2068).
+
+[leave a comment](https://www.herox.com/A2APublicParksCleaning/update/7240#comments)
+
+[REMINDER: The A2A High-Tech Autonomous Bin Emptying System Challenge Q&A Webinar starts in three hours!](https://www.herox.com/A2APublicParksCleaning/update/7213)
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Oct. 3, 2024, 3 a.m. PDT by [Caterina Crippa](https://www.herox.com/crowdsourcing-community/caterinacrippa-294584)
+
+The A2A High-Tech Autonomous Bin Emptying System Challenge Webinar starts in three hours!
+
+[![Image 7](https://lh6.googleusercontent.com/a4E3M29idQIlOT8BL3LlS6XPD0TChyxIFYoy97hjIDdhnCgu8PZpzevs0P5rq6BPLkukhJnGyzCXgrMn5ZHuzg-5U3dZJm4jBEVA-rA3sou1Be57t1eu0dVJZ9C5kNXFDyeWuE4qRd61Vop3SaAs9P1Ljt015jQHYjJZQpSFP5hgYY12KmOwj)](https://herox.zoom.us/webinar/register/WN84in3njLRHadXwlG-1pX7A)
+
+When: Today, Oct 3rd 09 AM ET / 03 PM CET
+
+What: Join HeroX and A2A for an introduction to the A2A High-Tech Autonomous Bin Emptying System  Challenge and a live Q&A!​
+
+[leave a comment](https://www.herox.com/A2APublicParksCleaning/update/7213#comments)
+
+Load more
+
+Forum11
+
+Teams161
+
+winners
+
+1st place
+
+[![Image 8](https://d253pvgap36xx8.cloudfront.net/avatars/984b0314d27811ef8f46d212aaef788a/983711ced27811ef8f46d212aaef788a.png)](https://www.herox.com/crowdsourcing-community/christophbultemann-212294)
+
+[Christoph Bültemann](https://www.herox.com/crowdsourcing-community/christophbultemann-212294)
+
+2nd place
+
+[![Image 9](https://secure.gravatar.com/avatar/c05b8618099691c573bb4c2b6262e307.jpg?s=80&d=identicon&r=g)](https://www.herox.com/A2APublicParksCleaning/team/27200)
+
+[Faisal Alghamdi's team](https://www.herox.com/A2APublicParksCleaning/team/27200)
+
+[![Image 10](https://d253pvgap36xx8.cloudfront.net/avatars/20383f20ccee11efb3a562aaab0064e1/20209b90ccee11efb3a562aaab0064e1.png)](https://www.herox.com/crowdsourcing-community/jammel-72008)
+
+[Jammel](https://www.herox.com/crowdsourcing-community/jammel-72008)
+
+[![Image 11](https://secure.gravatar.com/avatar/27992b4f9fa50a9e48ae9401c8762883.jpg?s=80&d=identicon&r=g)](https://www.herox.com/A2APublicParksCleaning/team/27050)
+
+[Wendell Chun's team](https://www.herox.com/A2APublicParksCleaning/team/27050)
+
+[12 teams](https://www.herox.com/A2APublicParksCleaning#)[161 innovators](https://www.herox.com/A2APublicParksCleaning#)
+
+  [Map](https://www.herox.com/A2APublicParksCleaning/map)
+
+ [![Image 12: j stollman's team](https://secure.gravatar.com/avatar/f12db82d72a34acc73a2537a8a04ae7b.jpg?s=80&d=identicon&r=g)](https://www.herox.com/A2APublicParksCleaning/team/27473)[j stollman's team](https://www.herox.com/A2APublicParksCleaning/team/27473)
+
+1 team member
+
+Looking for members
+
+ [![Image 13: Musab Alrawi's team](https://secure.gravatar.com/avatar/7f45ea61005edba29dc9bb96de3aeebc.jpg?s=80&d=identicon&r=g)](https://www.herox.com/A2APublicParksCleaning/team/27472)[Musab Alrawi's team](https://www.herox.com/A2APublicParksCleaning/team/27472)
+
+2 team members
+
+Looking for members
+
+ [![Image 14: jeff stollman's team](https://secure.gravatar.com/avatar/1df7c96621136669a0d9cd5b11aa3bba.jpg?s=80&d=identicon&r=g)](https://www.herox.com/A2APublicParksCleaning/team/27471)[jeff stollman's team](https://www.herox.com/A2APublicParksCleaning/team/27471)
+
+1 team member
+
+Looking for members
+
+ [![Image 15: Sanjay's team](https://secure.gravatar.com/avatar/3a14eb7c2fd7ee35699d54d6033017ee.jpg?s=80&d=identicon&r=g)](https://www.herox.com/A2APublicParksCleaning/team/27439)[Sanjay's team](https://www.herox.com/A2APublicParksCleaning/team/27439)
+
+1 team member
+
+Looking for members
+
+ [![Image 16: mihir velapure's team](https://secure.gravatar.com/avatar/8975418493335bde62a7812fcbe9972a.jpg?s=80&d=identicon&r=g)](https://www.herox.com/A2APublicParksCleaning/team/27259)[mihir velapure's team](https://www.herox.com/A2APublicParksCleaning/team/27259)
+
+3 team members
+
+Looking for members
+
+ [![Image 17: Faisal Alghamdi's team](https://secure.gravatar.com/avatar/c05b8618099691c573bb4c2b6262e307.jpg?s=80&d=identicon&r=g)](https://www.herox.com/A2APublicParksCleaning/team/27200)[Faisal Alghamdi's team](https://www.herox.com/A2APublicParksCleaning/team/27200)
+
+2 team members
+
+Looking for members
+
+ [![Image 18: Aaron K's team](https://secure.gravatar.com/avatar/a27645157883d37e05a22be21629afa2.jpg?s=80&d=identicon&r=g)](https://www.herox.com/A2APublicParksCleaning/team/27173)[Aaron K's team](https://www.herox.com/A2APublicParksCleaning/team/27173)
+
+1 team member
+
+Looking for members
+
+ [![Image 19: Energia Comune's team](https://secure.gravatar.com/avatar/1fd076733c520b6b95da4752ec9d77fa.jpg?s=80&d=identicon&r=g)](https://www.herox.com/A2APublicParksCleaning/team/27172)[Energia Comune's team](https://www.herox.com/A2APublicParksCleaning/team/27172)
+
+1 team member
+
+Looking for members
+
+ [![Image 20: Crointel](https://secure.gravatar.com/avatar/1130d1ef4aa53405c9655a135e6a679a.jpg?s=80&d=identicon&r=g)](https://www.herox.com/A2APublicParksCleaning/team/27169)[Crointel](https://www.herox.com/A2APublicParksCleaning/team/27169)
+
+1 team member
+
+Looking for members
+
+ [![Image 21: Wendell Chun's team](https://secure.gravatar.com/avatar/27992b4f9fa50a9e48ae9401c8762883.jpg?s=80&d=identicon&r=g)](https://www.herox.com/A2APublicParksCleaning/team/27050)[Wendell Chun's team](https://www.herox.com/A2APublicParksCleaning/team/27050)
+
+2 team members
+
+Looking for members
+
+ [![Image 22: Pactica's team](https://secure.gravatar.com/avatar/dfce10fb162dac9e6c13633b8b4ea2b7.jpg?s=80&d=identicon&r=g)](https://www.herox.com/A2APublicParksCleaning/team/26980)[Pactica's team](https://www.herox.com/A2APublicParksCleaning/team/26980)
+
+1 team member
+
+Looking for members
+
+ [![Image 23: Science Art Name's team](https://secure.gravatar.com/avatar/9182cf8c8a8c4c1ebbb4823f0648318c.jpg?s=80&d=identicon&r=g)](https://www.herox.com/A2APublicParksCleaning/team/26890)[Science Art Name's team](https://www.herox.com/A2APublicParksCleaning/team/26890)
+
+3 team members
+
+Looking for members
+
+  [Map](https://www.herox.com/A2APublicParksCleaning/map)
+
+Resources
+
+FAQ
+
+Other Challenges You May Be Interested In
+-----------------------------------------
+
+ [![Image 24](https://d253pvgap36xx8.cloudfront.net/challenges/videothumbnail/4886ba40243011efb78e8a9e0b81bc75.jpeg) ![Image 25](https://d253pvgap36xx8.cloudfront.net/avatars/f2a81580bbaa11eebb135a381d1e73fd/f28a692cbbaa11eebb135a381d1e73fd.png) by GoAERO Prize 1.4K GoAERO Prize Design and build a safe, portable, robust, autonomy-enabled Emergency Response Flyer. Enter $2M Prize](https://www.herox.com/goaero?from=recommended-challenge)
+
+    [![Image 26](https://d253pvgap36xx8.cloudfront.net/challenges/thumbnail/076fc08a8bdf11ef8726b25a99c7291b/061194208bdf11efadb52a0ec43529b4.jpeg) ![Image 27](https://d253pvgap36xx8.cloudfront.net/groups/logothumbnail/cbfdbe6abc3011ec918cfef0200019cc/ca9dca9cbc3011ec9a05d660b39e5251.png) by American-Made Challenges 234 Industrial Energy Storage Systems Prize Developing energy storage solutions that can accommodate cooling, thermal, and/or electric energy loads at the industrial facility size. Enter \- 93 Days Remaining $4.8M Prize](https://www.herox.com/industrial-energy-storage?from=recommended-challenge)
+
+    [![Image 28](https://d253pvgap36xx8.cloudfront.net/static/images/powered-by-text.svg) ![Image 29](https://d253pvgap36xx8.cloudfront.net/static/images/logo-white.svg) ![Image 30](https://d253pvgap36xx8.cloudfront.net/challenges/thumbnail/c8237fb6b93e11eeba2e6a0ac9dba3a7/c7ec4e7eb93e11ee90393ee01bb9ba13.jpeg) ![Image 31](https://d253pvgap36xx8.cloudfront.net/avatars/dbc96ed801cb11efa4f6865c05da017f/dbad531a01cb11efa4f6865c05da017f.png) by ENMICE | Servicios de Exploración Espacial 621 ENMICE El encuentro y competencia líder de Cohetería Experimental en México. Enter](https://www.herox.com/ENMICE2022?from=recommended-challenge)
+
+![Image 32: Home](https://d253pvgap36xx8.cloudfront.net/static/images/logo-white.svg)
+
+![Image 33: Home](https://d253pvgap36xx8.cloudfront.net/static/images/logo-white.svg)
+
+Be the first to know
+
+when new crowdsourcing projects are posted
+
+ subscribe
+
+about herox
+
+   [about us](https://www.herox.com/about)
+   [press kit](https://www.herox.com/press-kit)
+   [partner with us](https://www.herox.com/partnerships)
+   [partners](https://www.herox.com/partners)
+   [careers](https://www.herox.com/work-with-us)
+   [privacy](https://www.herox.com/privacy-policy)
+   [terms](https://www.herox.com/terms-of-use)
+   [cookie policy](https://www.herox.com/cookie-policy)
+
+community
+
+   [blog](https://www.herox.com/blog)
+   [organizations involved](https://www.herox.com/crowdsourcing-projects/crowdsourcing-companies)
+   [events & webinars](https://www.herox.com/events)
+   [community](https://www.herox.com/crowdsourcing-community)
+   [general forums](https://www.herox.com/forum)
+
+support
+
+   [contact us](https://www.herox.com/i-want-to-launch-challenge)
+   [how HeroX works](https://www.herox.com/how-it-works)
+   [knowledge base](https://www.herox.com/help)
+   [FAQ](https://www.herox.com/faq)
+   [innovation resources](https://www.herox.com/innovation-resources)
+
+Be the first to know
+
+when new crowdsourcing projects are posted
+
+ subscribe
+
+[](https://www.instagram.com/beherox/ "HeroX on Instagram")[](https://www.facebook.com/IamHeroX "HeroX on Facebook")[](https://twitter.com/iamherox "HeroX on Twitter")[](https://linkedin.com/company/herox "HeroX on LinkedIn")[](https://www.youtube.com/channel/UCzvAiGkFmx1JqomRoM71buw "HeroX on Youtube")
+
+© Copyright HeroX 2025
+
+Was this page helpful? yes no
+
+Please tell us why. The suspense is killin' us!
+
+submit
+
+Thank You!
+
+Your feedback is always welcome!
