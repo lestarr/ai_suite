@@ -15,31 +15,54 @@ USERS_FILE = os.path.join(DATA_DIR, "users.json")
 if not os.path.exists(DATA_DIR):
     os.makedirs(DATA_DIR)
 
-# Initialize data storage
+# Update constants to include user-specific paths
+def get_user_data_path(username):
+    """Get path to user-specific data directory"""
+    return os.path.join(DATA_DIR, username)
+
+def get_user_files(username):
+    """Get paths to user-specific data files"""
+    user_dir = get_user_data_path(username)
+    return {
+        'exercises': os.path.join(user_dir, "exercises.json"),
+        'workouts': os.path.join(user_dir, "workouts.json")
+    }
+
+# Update init_data_storage to handle user-specific directories
 def init_data_storage():
     """Initialize data storage files in the 'data' directory"""
     if not os.path.exists(DATA_DIR):
         os.makedirs(DATA_DIR)
     
-    # Initialize files if they don't exist
-    files = {
-        USERS_FILE: {"users": []},
-        EXERCISES_FILE: {"exercises": []},
-        WORKOUTS_FILE: {"workouts": []}
+    # Initialize only users file if it doesn't exist
+    if not os.path.exists(USERS_FILE):
+        with open(USERS_FILE, 'w') as f:
+            json.dump({"users": []}, f)
+
+def init_user_storage(username):
+    """Initialize storage for a specific user"""
+    user_dir = get_user_data_path(username)
+    if not os.path.exists(user_dir):
+        os.makedirs(user_dir)
+    
+    user_files = get_user_files(username)
+    default_data = {
+        user_files['exercises']: {"exercises": []},
+        user_files['workouts']: {"workouts": []}
     }
     
-    for file_path, default_data in files.items():
+    for file_path, default_content in default_data.items():
         if not os.path.exists(file_path):
             with open(file_path, 'w') as f:
-                json.dump(default_data, f)
+                json.dump(default_content, f)
 
-def load_users():
-    with open(USERS_FILE, 'r') as f:
-        data = json.load(f)
-        return data["users"]
-
+# Update save_user to initialize user storage
 def save_user(name):
     users = load_users()
+    # Check if user already exists
+    if any(user['name'] == name for user in users):
+        return False, "User already exists"
+    
     users.append({
         "id": len(users) + 1,
         "name": name,
@@ -47,109 +70,132 @@ def save_user(name):
     })
     with open(USERS_FILE, 'w') as f:
         json.dump({"users": users}, f)
+    
+    # Initialize storage for new user
+    init_user_storage(name)
+    return True, f"Added user: {name}"
 
-def load_exercises():
-    with open(EXERCISES_FILE, 'r') as f:
+# Update delete_user to remove user data
+def delete_user(name):
+    """Delete a user and all their data"""
+    users = load_users()
+    users = [user for user in users if user['name'] != name]
+    with open(USERS_FILE, 'w') as f:
+        json.dump({"users": users}, f)
+    
+    # Remove user's data directory
+    user_dir = get_user_data_path(name)
+    if os.path.exists(user_dir):
+        import shutil
+        shutil.rmtree(user_dir)
+
+# Update data loading functions to use user-specific files
+def load_exercises(username):
+    user_files = get_user_files(username)
+    with open(user_files['exercises'], 'r') as f:
         data = json.load(f)
         return data["exercises"]
 
-def normalize_exercise_name(name):
-    """Normalize exercise name: lowercase and strip extra spaces"""
-    return " ".join(name.lower().split())
+def load_workouts(username):
+    user_files = get_user_files(username)
+    with open(user_files['workouts'], 'r') as f:
+        data = json.load(f)
+        return data["workouts"]
 
-def save_exercise(name, muscle_group):
-    exercises = load_exercises()
+# Update save functions to use user-specific files
+def save_exercise(name, muscle_group, username):
+    exercises = load_exercises(username)
     normalized_name = normalize_exercise_name(name)
     
-    # Check if exercise already exists (case-insensitive)
+    # Check if exercise already exists
     for i, ex in enumerate(exercises):
         if normalize_exercise_name(ex['name']) == normalized_name:
-            # Update existing exercise
             exercises[i] = {
-                "name": normalized_name,  # Store normalized name
+                "name": normalized_name,
                 "muscle_group": muscle_group,
-                "created_at": ex['created_at']  # Keep original creation date
+                "created_at": ex['created_at']
             }
             break
-    else:  # Exercise doesn't exist
-        # Add new exercise
+    else:
         exercises.append({
             "name": normalized_name,
             "muscle_group": muscle_group,
             "created_at": datetime.now().isoformat()
         })
     
-    # Save to file
-    with open(EXERCISES_FILE, 'w') as f:
+    user_files = get_user_files(username)
+    with open(user_files['exercises'], 'w') as f:
         json.dump({"exercises": exercises}, f)
 
-def load_workouts():
-    with open(WORKOUTS_FILE, 'r') as f:
-        data = json.load(f)
-        return data["workouts"]
-
-def save_workout(exercise, weight, reps):
-    workouts = load_workouts()
+def save_workout(exercise, weight, reps, username):
+    workouts = load_workouts(username)
     workouts.append({
         "date": datetime.now().strftime('%Y-%m-%d'),
-        "user": st.session_state.current_user,
         "exercise": exercise,
         "weight": weight,
         "reps": reps
     })
-    with open(WORKOUTS_FILE, 'w') as f:
+    user_files = get_user_files(username)
+    with open(user_files['workouts'], 'w') as f:
         json.dump({"workouts": workouts}, f)
 
-def import_from_csv(file):
-    """Import workout data from CSV file"""
+def load_users():
+    with open(USERS_FILE, 'r') as f:
+        data = json.load(f)
+        return data["users"]
+
+def normalize_exercise_name(name):
+    """Normalize exercise name: lowercase and strip extra spaces"""
+    return " ".join(name.lower().split())
+
+def import_from_csv(file, username):
+    """Import workout data from CSV file for specific user"""
     try:
         df = pd.read_csv(file)
+        # close the file
+        file.close()
         required_columns = ['date', 'exercise', 'weight', 'reps']
         
-        # Validate CSV structure
         if not all(col in df.columns for col in required_columns):
             return False, "CSV must contain columns: date, exercise, weight, reps"
         
-        # Normalize exercise names in the imported data
         df['exercise'] = df['exercise'].apply(normalize_exercise_name)
         
-        # First, add new exercises to the exercise database
-        existing_exercises = load_exercises()
+        # Add new exercises to user's exercise database
+        existing_exercises = load_exercises(username)
         existing_names = {normalize_exercise_name(ex['name']) for ex in existing_exercises}
         
-        # Get unique exercises from imported data
         new_exercises = []
         for exercise_name in df['exercise'].unique():
             exercise_name = exercise_name.strip()
             if exercise_name not in existing_names:
                 new_exercises.append({
                     "name": exercise_name,
-                    "muscle_group": "Other",  # Default to "Other" for imported exercises
+                    "muscle_group": "Other",
                     "created_at": datetime.now().isoformat()
                 })
         
-        # Add new exercises to database
         if new_exercises:
             existing_exercises.extend(new_exercises)
-            with open(EXERCISES_FILE, 'w') as f:
+            user_files = get_user_files(username)
+            with open(user_files['exercises'], 'w') as f:
                 json.dump({"exercises": existing_exercises}, f)
         
-        # Then import the workout data
-        workouts = load_workouts()
+        # Import workout data
+        workouts = load_workouts(username)
         new_workouts = df.to_dict('records')
         
         for workout in new_workouts:
-            # Convert date to YYYY-MM-DD format, stripping any time information
             date = pd.to_datetime(workout['date']).strftime('%Y-%m-%d')
             workouts.append({
                 "date": date,
-                "user": st.session_state.current_user,
-                "exercise": workout['exercise'],  # Already normalized
+                "exercise": workout['exercise'],
                 "weight": float(workout.get('weight', 0)),
                 "reps": int(workout['reps'])
             })
         
-        with open(WORKOUTS_FILE, 'w') as f:
+        user_files = get_user_files(username)
+        with open(user_files['workouts'], 'w') as f:
             json.dump({"workouts": workouts}, f)
         
         message = f"Imported {len(new_workouts)} workouts"
@@ -170,9 +216,9 @@ def delete_workout(workout_index):
         return True, f"Deleted: {deleted['exercise']} - {deleted['reps']} reps"
     return False, "Invalid workout index"
 
-def get_last_workout(exercise, user):
+def get_last_workout(exercise, username):
     """Get the most recent workout for given exercise and user"""
-    workouts = load_workouts()
+    workouts = load_workouts(username)
     if not workouts:
         return None
     
@@ -180,34 +226,29 @@ def get_last_workout(exercise, user):
     # Handle date parsing with mixed formats
     df['date'] = pd.to_datetime(df['date'], format='mixed')
     
-    # Filter for user and exercise
-    user_exercise_df = df[
-        (df['user'] == user) & 
-        (df['exercise'] == exercise)
-    ].sort_values('date', ascending=False)
+    # Filter for exercise
+    exercise_df = df[df['exercise'] == exercise].sort_values('date', ascending=False)
     
-    if not user_exercise_df.empty:
-        return user_exercise_df.iloc[0]
+    if not exercise_df.empty:
+        return exercise_df.iloc[0]
     return None
 
 def log_workout():
     st.subheader("Log Workout")
     
-    exercises = load_exercises()
-    # Sort exercise names case-insensitively
+    exercises = load_exercises(st.session_state.current_user)
     exercise_names = sorted([ex["name"] for ex in exercises], key=str.lower)
     
-    # Input form with three columns
     col1, col2, col3 = st.columns(3)
     
     with col1:
         exercise = st.selectbox(
             "Exercise",
             options=exercise_names if exercise_names else ["Add exercises first"],
-            placeholder="Select exercise"
+            placeholder="Select exercise",
+            key="workout_exercise_select"
         )
         
-        # Get last workout data for this exercise
         if exercise and exercise != "Add exercises first":
             last_workout = get_last_workout(exercise, st.session_state.current_user)
         else:
@@ -220,7 +261,8 @@ def log_workout():
             max_value=500.0,
             step=1.0,
             format="%g",
-            value=float(last_workout['weight']) if last_workout is not None else 0.0
+            value=float(last_workout['weight']) if last_workout is not None else 0.0,
+            key="workout_weight_input"
         )
     
     with col3:
@@ -229,17 +271,15 @@ def log_workout():
             min_value=0,
             max_value=100,
             step=1,
-            value=int(last_workout['reps']) if last_workout is not None else 0
+            value=int(last_workout['reps']) if last_workout is not None else 0,
+            key="workout_reps_input"
         )
     
-    # Single button for logging sets
-    if st.button("Log Set", type="primary"):
+    if st.button("Log Set", type="primary", key="log_set_button"):
         if exercise and exercise != "Add exercises first":
-            if reps > 0:  # Only check reps, weight can be 0
-                save_workout(exercise, weight, reps)
+            if reps > 0:
+                save_workout(exercise, weight, reps, st.session_state.current_user)
                 st.success("Set logged successfully!")
-                # Keep the form values for quick logging of next set
-                st.rerun()  # This will refresh the page but keep the input values
             else:
                 st.error("Please enter number of reps")
         else:
@@ -251,10 +291,9 @@ def log_workout():
     # Show progress chart only for selected exercise
     if exercise and exercise != "Add exercises first":
         st.write("### Exercise Progress")
-        workouts = load_workouts()
+        workouts = load_workouts(st.session_state.current_user)
         if workouts:
             df = pd.DataFrame(workouts)
-            df = df[df['user'] == st.session_state.current_user]
             df['date'] = pd.to_datetime(df['date'], format='mixed')
             
             # Filter data for selected exercise
@@ -266,19 +305,13 @@ def log_workout():
             else:
                 st.info(f"No workout data yet for {exercise}")
 
-def delete_exercise(name):
+def delete_exercise(name, username):
     """Delete an exercise from the database"""
-    exercises = load_exercises()
+    exercises = load_exercises(username)
     exercises = [ex for ex in exercises if ex['name'] != name]
-    with open(EXERCISES_FILE, 'w') as f:
+    user_files = get_user_files(username)
+    with open(user_files['exercises'], 'w') as f:
         json.dump({"exercises": exercises}, f)
-
-def delete_user(name):
-    """Delete a user from the database"""
-    users = load_users()
-    users = [user for user in users if user['name'] != name]
-    with open(USERS_FILE, 'w') as f:
-        json.dump({"users": users}, f)
 
 def manage_exercises():
     st.subheader("Exercise Management")
@@ -291,7 +324,7 @@ def manage_exercises():
     
     with col1:
         # Get existing exercise names
-        exercises = load_exercises()
+        exercises = load_exercises(st.session_state.current_user)
         # Sort exercise names case-insensitively
         existing_names = sorted([ex["name"] for ex in exercises], key=str.lower)
         
@@ -299,28 +332,30 @@ def manage_exercises():
         exercise_options = ["Add New"] + existing_names
         selected_exercise = st.selectbox(
             "Exercise Name",
-            options=exercise_options
+            options=exercise_options,
+            key="exercise_select"
         )
         
         # Show text input if "Add New" is selected
         if selected_exercise == "Add New":
-            new_exercise = st.text_input("New Exercise Name")
+            new_exercise = st.text_input("New Exercise Name", key="new_exercise_input")
         else:
             new_exercise = selected_exercise
             
     with col2:
         muscle_group = st.selectbox(
             "Muscle Group", 
-            MUSCLE_GROUPS
+            MUSCLE_GROUPS,
+            key="muscle_group_select"
         )
+    
     with col3:
         st.write("")  # Spacing
         st.write("")  # Spacing
-        if st.button("Add/Update Exercise", type="primary"):
+        if st.button("Add/Update Exercise", type="primary", key="add_update_button"):
             if new_exercise and new_exercise != "Add New":
-                save_exercise(new_exercise, muscle_group)
+                save_exercise(new_exercise, muscle_group, st.session_state.current_user)
                 st.success(f"Added/Updated {new_exercise}")
-                st.rerun()
             else:
                 st.error("Please enter exercise name")
     
@@ -328,11 +363,10 @@ def manage_exercises():
         st.write("")  # Spacing
         st.write("")  # Spacing
         if selected_exercise != "Add New":
-            if st.button("🗑️ Delete", type="secondary", help="Delete selected exercise"):
+            if st.button("🗑️ Delete", type="secondary", help="Delete selected exercise", key="delete_button"):
                 if selected_exercise:
-                    delete_exercise(selected_exercise)
+                    delete_exercise(selected_exercise, st.session_state.current_user)
                     st.success(f"Deleted {selected_exercise}")
-                    st.rerun()
     
     # Show existing exercises with editable muscle groups
     if exercises:
@@ -386,19 +420,17 @@ def manage_exercises():
                         })
                         break
             
-            # Save updated exercises
-            with open(EXERCISES_FILE, 'w') as f:
+            # Save updated exercises to user-specific file
+            user_files = get_user_files(st.session_state.current_user)
+            with open(user_files['exercises'], 'w') as f:
                 json.dump({"exercises": updated_exercises}, f)
             
             st.success("Updated muscle groups")
-            st.rerun()
 
 def show_recent_workouts():
-    workouts = load_workouts()
+    workouts = load_workouts(st.session_state.current_user)
     if workouts:
         df = pd.DataFrame(workouts)
-        # Filter for current user
-        df = df[df['user'] == st.session_state.current_user]
         
         if df.empty:
             st.info(f"No workouts logged yet for {st.session_state.current_user}")
@@ -455,14 +487,13 @@ def show_recent_workouts():
 
 def show_analytics():
     st.subheader("Analytics")
-    workouts = load_workouts()
+    workouts = load_workouts(st.session_state.current_user)
     
     if not workouts:
         st.info("No workout data available yet")
         return
     
     df = pd.DataFrame(workouts)
-    df = df[df['user'] == st.session_state.current_user]
     df['date'] = pd.to_datetime(df['date'], format='mixed')
     
     # Weekly comparison
@@ -546,13 +577,13 @@ def create_progress_chart(exercise_data, exercise_name):
     
     return fig
 
-def import_exercises_from_csv(file):
+def import_exercises_from_csv(file, username):
     """Import exercises from CSV to the exercise database"""
     try:
         df = pd.read_csv(file)
         
         # Get existing exercises
-        existing = load_exercises()
+        existing = load_exercises(username)
         existing_names = {ex['name'].lower() for ex in existing}
         
         # Process new exercises
@@ -568,7 +599,8 @@ def import_exercises_from_csv(file):
         
         if new_exercises:
             existing.extend(new_exercises)
-            with open(EXERCISES_FILE, 'w') as f:
+            user_files = get_user_files(username)
+            with open(user_files['exercises'], 'w') as f:
                 json.dump({"exercises": existing}, f)
             
             return True, f"Added {len(new_exercises)} new exercises. Please categorize them in the Exercises tab."
@@ -609,9 +641,12 @@ def main():
         # Handle add user action
         if add_clicked:
             if new_user:
-                save_user(new_user)
-                st.success(f"Added user: {new_user}")
-                st.rerun()
+                success, message = save_user(new_user)
+                if success:
+                    st.success(message)
+                    st.rerun()
+                else:
+                    st.error(message)
             else:
                 st.error("Please enter a username")
         
@@ -645,17 +680,16 @@ def main():
             # Workout data import/export
             csv_file = st.file_uploader("Import Workouts", type=['csv'])
             if csv_file is not None:
-                success, message = import_from_csv(csv_file)
+                success, message = import_from_csv(csv_file, st.session_state.current_user)
                 if success:
                     st.success(message)
                 else:
                     st.error(message)
             
             if st.button("Export Workouts"):
-                workouts = load_workouts()
+                workouts = load_workouts(st.session_state.current_user)
                 if workouts:
                     df = pd.DataFrame(workouts)
-                    df = df[df['user'] == st.session_state.current_user]
                     csv = df.to_csv(index=False)
                     
                     # Create base filename with username and date
@@ -679,7 +713,7 @@ def main():
             # Exercise database import
             exercise_file = st.file_uploader("Import Exercises", type=['csv'])
             if exercise_file is not None:
-                success, message = import_exercises_from_csv(exercise_file)
+                success, message = import_exercises_from_csv(exercise_file, st.session_state.current_user)
                 if success:
                     st.success(message)
                 else:
@@ -698,4 +732,4 @@ def main():
 if __name__ == "__main__":
     main()
 
-    # streamlit run streamlit/fitness_tracker/fitness_tracker.py
+    # streamlit run ai_suite/projects/fitness_app/fitness_tracker.py
